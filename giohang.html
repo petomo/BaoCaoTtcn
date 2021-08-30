@@ -1,0 +1,400 @@
+
+<!DOCTYPE html>
+
+<head>
+	<title>Shop Laptop</title>
+	
+	<meta charset="UTF-8"/>	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/all.css" rel="stylesheet"> <!--load all styles -->		
+	<script defer src="js/all.js"></script> <!--load all styles -->	
+	<link rel="stylesheet" type="text/css" media="all" href="css/responsive.css"/>	
+	<link rel="stylesheet" type="text/css" media="all" href="css/style.css"/>	
+	<link rel='stylesheet' id='cherry-plugin-css' href='css/cherry-plugin.cssver1.2.6.css' type='text/css' media='all'/>	
+	<link rel='stylesheet' id='theme52702-css' href='css/main-style.css' type='text/css' media='all'/>	
+	<link rel='stylesheet' id='magnific-popup-css' href='css/magnific-popup.cssver0.9.3.css' type='text/css' media='all'/>
+	<script type='text/javascript' src='js/jquery-1.7.2.min.jsver1.7.2.js'></script>	
+	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+    <!-- use jssor.slider.mini.js (40KB) instead for release -->
+    <!-- jssor.slider.mini.js = (jssor.js + jssor.slider.js) -->
+    <script type="text/javascript" src="../js/jssor.js"></script>
+    <script type="text/javascript" src="../js/jssor.slider.js"></script>
+	<script type="text/javascript">
+		// Init navigation menu
+		jQuery(function(){
+		// main navigation init
+			jQuery('ul.sf-menu').superfish({
+				delay: 1000, // the delay in milliseconds that the mouse can remain outside a sub-menu without it closing
+				animation: {
+					opacity: "show",
+					height: "show"
+				}, // used to animate the sub-menu open
+				speed: "normal", // animation speed
+				autoArrows: true, // generation of arrow mark-up (for submenu)
+				disableHI: true // to disable hoverIntent detection
+			});
+
+		//Zoom fix
+		//IPad/IPhone
+			var viewportmeta = document.querySelector && document.querySelector('meta[name="viewport"]'),
+				ua = navigator.userAgent,
+				gestureStart = function () {
+					viewportmeta.content = "width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0";
+				},
+				scaleFix = function () {
+					if (viewportmeta && /iPhone|iPad/.test(ua) && !/Opera Mini/.test(ua)) {
+						viewportmeta.content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
+						document.addEventListener("gesturestart", gestureStart, false);
+					}
+				};
+			scaleFix();
+		})
+	</script>					
+</head>
+<body class="home">
+	<div id="motopress-main" class="main-holder">
+		<header class="motopress-wrapper header">
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+						<div class="header_top">
+							<div class="row">
+								
+							</div>
+						</div>
+						<div class="row">
+							<div class="span3"> 
+								<div class="logo pull-left" id="logo">
+									<a href="#" class=" logo_h__img">
+										<img src="images/logo.png" alt="provise" title="provise">
+									</a>
+									<p class="logo_tagline">Shop Điện tử</p> 
+								</div>
+							</div>
+							<div class="span7 margin_left_10">
+ 
+								<nav class="nav nav__primary clearfix ">
+									<ul id="topnav" class="sf-menu">
+										<li id="menu-item-1807" class="menu-item current_page_item">
+											<a href="index.html">Trang Chủ</a>
+										</li>
+										
+										<li id="menu-item-1808" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="#">Kiểu Thiết bị</a>
+											<ul class="sub-menu">
+												<li id="menu-item-1815" class="menu-item"><a href="kieu.html">khuyến mãi</a></li>
+												<li id="menu-item-1814" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="#">Loại thiết bị</a>
+													<ul class="sub-menu">
+													<li id="menu-item-1883" class="menu-item"><a href="kieu.html">Laptop HP</a></li>
+													<li id="menu-item-1882" class="menu-item"><a href="kieu.html">Laptop Acer</a></li>
+													<li id="menu-item-1881" class="menu-item"><a href="kieu.html">Laptop Dell</a></li>
+													<li id="menu-item-1881" class="menu-item"><a href="kieu.html">Laptop Lenovo</a></li>
+													</ul>
+												</li>
+												<li id="menu-item-1813" class="menu-item"><a href="kieu.html">Bán Chạy</a></li>
+												<li id="menu-item-1813" class="menu-item"><a href="kieu.html">Mới Cập Nhật</a></li>
+											</ul>
+										</li>
+										<li id="menu-item-1809" class="menu-item"><a href="contact.html">Trợ giúp</a></li>
+										<li id="menu-item-1804" class="menu-item"><a href="#">Giỏ hàng</a></li>
+										<li id="menu-item-1810" class="menu-item">
+											<a href="dangnhap.html">Đăng nhập</a>
+										</li>
+									</ul>
+									
+								</nav>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script>
+				function changeClass(){
+					document.getElementById ('topnav'). classList.toggle ('dlb');
+				}
+				window.onload = function(){
+				document.getElementById("logo").addEventListener( 'click', changeClass);
+    }
+			</script>
+		</header>
+		<style>
+			.home .content-holder {
+			padding: 0;
+			margin-top: 55px;
+		}
+		</style>
+		
+		<div class="motopress-wrapper content-holder clearfix">
+			<div class="container ">
+				<div class="row">
+					<div class="row pa_top">
+					<div class="search">
+						<input type="search" placeholder="tìm kiếm" class="search_text"><a href="#"><img src="imgs/tim.png"/></a>
+					</div>
+					</div>
+					<div class="span12">
+						<div class="row">
+							<h2>Giỏ hàng</h2>
+							<div class="row">
+								<div class="span4">
+									<div class="row bd">
+										<div class="span3">
+											<img u="image" src="imgs/pavilionX360.webp" width="100%"/>
+										</div>
+										<div class="span7">
+											<h5>Laptop Acer Spin 3</h5>
+											<table>
+												<tr>
+													<td>Thương hiệu</td>
+													<td>ACER</td>
+												</tr>
+												<tr>
+													<td>Giá</td>
+													<td>13.899.000đ</td>
+												</tr>
+												<tr>
+													<td> Số lượng</td>
+													<td><input type="nhapsoluong" placeholder="1"><input type="button" value="+"></td>
+												</tr>
+											</table>
+										</div>
+									</div>
+									<div class="row bd">
+										<div class="span3">
+											<img u="image" src="imgs/pavilionX360.webp" width="100%"/>
+										</div>
+										<div class="span7">
+											<h5>Laptop Acer Spin 3</h5>
+											<table>
+												<tr>
+													<td>Thương hiệu</td>
+													<td>ACER</td>
+												</tr>
+												<tr>
+													<td>Giá</td>
+													<td>14.899.000đ</td>
+												</tr>
+												<tr>
+													<td> Số lượng</td>
+													<td><input type="nhapsoluong" placeholder="1"><input type="button" value="+"></td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="span4">
+									<table>
+												<tr>
+													<th colspan="2">Mã giảm giá</th>
+												</tr>
+												<tr>
+													<td class="span4"><input type="macoupoun" size="90%" class="span9" style="margin-top: 10px;"></td>
+													<td class="span3"><input type="button" value="áp dụng" class="btn" style="margin-top:0px;"></td>
+												</tr>
+												<tr>
+													<td class="span4"><h4> Thanh toán</h4></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td class="span4"> Số lượng sản phẩm</td>
+													<td class="span3"> 2</td>
+												</tr>
+												<tr>
+													<td class="span4"> Tổng tiền</td>
+													<td class="span3"> 29.000.000đ</td>
+												</tr>
+												<tr>
+													<td class="span4"> Tổng tiền thanh toán</td>
+													<td class="span3"> 29.000.000đ</td>
+												</tr>
+												<tr>
+													<td colspan="2"><input type="button" value="Thanh toán" size="90%" class="span9 btn" style="margin-top:0px;"></td>
+												</tr>
+											</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<footer class="motopress-wrapper footer">
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+						<div class="row footer-widgets">
+							<div class="span4">
+								<div class="row">
+									<div id="social_networks-2">
+									<style>
+					.captionOrange, .captionBlack
+				{
+					color: #fff;
+					font-size: 20px;
+					line-height: 30px;
+					text-align: center;
+					border-radius: 4px;
+				}
+				.captionOrange
+				{
+					background: #EB5100;
+					background-color: rgba(235, 81, 0, 0.6);
+				}
+				.captionBlack
+				{
+					font-size:16px;
+					background: #000;
+					background-color: rgba(0, 0, 0, 0.4);
+				}
+				a.captionOrange, A.captionOrange:active, A.captionOrange:visited
+				{
+					color: #ffffff;
+					text-decoration: none;
+				}
+				a.captionOrange:hover
+				{
+					color: #eb5100;
+					text-decoration: underline;
+					background-color: #eeeeee;
+					background-color: rgba(238, 238, 238, 0.7);
+				}
+				.bricon
+				{
+					background: url(img/browser-icons.png);
+				}
+					
+						.share-icon {
+							display: inline-block;
+							float: left;
+							margin: 4px;
+							width: 32px;
+							height: 32px;
+							cursor: pointer;
+							vertical-align: middle;
+							background-image: url(img/share/share-icons.png);
+						}
+
+						.share-facebook {
+							background-position: 0px 0px;
+						}
+
+							.share-facebook:hover {
+								background-position: 0px -40px;
+							}
+
+				.share-twitter {
+					background-position: -40px 0px;
+				}
+
+					.share-twitter:hover {
+						background-position: -40px -40px;
+					}
+
+				.share-pinterest {
+					background-position: -80px 0px;
+				}
+
+					.share-pinterest:hover {
+						background-position: -80px -40px;
+					}
+
+						.share-linkedin {
+							background-position: -240px 0px;
+						}
+
+							.share-linkedin:hover {
+								background-position: -240px -40px;
+							}
+
+
+						.share-googleplus {
+							background-position: -120px 0px;
+						}
+
+							.share-googleplus:hover {
+								background-position: -120px -40px;
+							}
+
+
+				.share-stumbleupon {
+					background-position: -360px 0px;
+				}
+
+					.share-stumbleupon:hover {
+						background-position: -360px -40px;
+					}
+
+						.share-email {
+							background-position: -320px 0px;
+						}
+
+							.share-email:hover {
+								background-position: -320px -40px;
+							}
+					</style>
+										<h4>Follow Us</h4>							 
+										<ul class="social">
+											<li class="social_li">
+												<a class="share-icon share-facebook" target="_blank" href="http://www.facebook.com/sharer.php?u=http://jssor.com" title="Share on Facebook"></a>
+											</li>
+											<li class="social_li">
+												<a class="share-icon share-twitter" target="_blank" href="http://twitter.com/share?url=http://jssor.com&text=JavaScript%20jQuery%20Image%20Slider/Slideshow/Carousel/Gallery/Banner%20html%20TOUCH%20SWIPE%20Responsive" title="Share on Twitter"></a>
+						
+											</li>
+											<li class="social_li">
+												<a class="share-icon share-linkedin" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=http://jssor.com" title="Share on LinkedIn"></a>
+						
+											</li>
+											<li class="social_li">
+												<a class="share-icon share-stumbleupon" target="_blank" href="http://www.stumbleupon.com/submit?url=http://jssor.com&title=JavaScript%20jQuery%20Image%20Slider/Slideshow/Carousel/Gallery/Banner%20html%20TOUCH%20SWIPE%20Responsive" title="Share on StumbleUpon"></a>
+						
+											</li>
+											<li class="social_li">
+												<a class="share-icon share-email" target="_blank" href="mailto:?Subject=Jssor%20Slider&Body=Highly%20recommended%20JavaScript%20jQuery%20Image%20Slider/Slideshow/Carousel/Gallery/Banner%20html%20TOUCH%20SWIPE%20Responsive%20http://jssor.com" title="Share by Email"></a>
+					
+											</li>
+										</ul>							 
+									</div> 
+								</div>
+								<div class="row">
+									<div id="footer-text" class="footer-text">
+										 &copy; 2021<br/>
+										Privacy Policy			 
+									</div> 
+								</div>
+							</div>
+							<div class="span4">
+								<div id="text-6">
+									<h4>Địa Chỉ</h4> 
+									<div class="textwidget">
+										<address class="address-2">
+											<span>Đại Học Bà Rịa Vũng Tàu</span>
+											<span>Điện Thoại: Chưa Có</span>
+											<span>
+												<a href="#">
+													<span class="email">[email&#160;protected]</span>
+													
+												</a>
+											</span>
+										</address>
+									</div>
+								</div> 
+							</div> 
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		 
+	</div>
+	<div id="back-top-wrapper" class="visible-desktop">
+		<p id="back-top">
+			<a href="#top"><span></span></a> 
+		</p>
+	</div>
+	<script type='text/javascript' src='js/superfish.jsver1.5.3.js'></script>
+	<script type='text/javascript' src='js/jquery.mobilemenu.jsver1.0.js'></script>
+	<script type='text/javascript' src='js/jquery.magnific-popup.min.jsver0.9.3.js'></script>
+</body>
+</html>
