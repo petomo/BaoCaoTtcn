@@ -141,7 +141,7 @@ jQuery(document).ready(function ($) {
             else{
                 var new_id='';
                 number_li[id.toString()]++;
-                alert(number_li[id.toString()]);
+               
                 new_id= id+'_'+number_li[id.toString()];
                 if(number_li[id.toString()]<=1){
                     $('#TreeView #'+id).append('<ul><li class="open" id="'+new_id+'"><span>'+NewGroup+'</span><img src="../hinhanh/icons8-edit-24.png"class="edit"/></li><ul>');
@@ -156,6 +156,7 @@ jQuery(document).ready(function ($) {
                 number_li[id+'_'+number_li[id.toString()]]=0;
                 
             }
+            alert("Thêm thành công");
         }
     });
     $('#dialog-edit #save').click(function(){
@@ -208,6 +209,7 @@ jQuery(document).ready(function ($) {
             $('#'+id_edit).remove();
             $('#dialog #'+id_edit).remove();
             $('#dialog-edit #'+id_edit).remove();
+            alert("Thay đổi thành công");
         
         }
       
@@ -216,5 +218,6 @@ jQuery(document).ready(function ($) {
         $('#'+id_edit).remove();
         $('#dialog #'+id_edit).remove();
         $('#dialog-edit #'+id_edit).remove();
+        alert("Thay đổi thành công");
     });
 });
