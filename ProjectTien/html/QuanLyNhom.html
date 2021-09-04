@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Laptop</title>
+    <link rel="stylesheet" href="../bootstrap-5.1.0-dist/css/bootstrap.min.css">
+    <script src="../bootstrap-5.1.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+    <link rel="stylesheet" href="../css/QuanLyNhom.css">
+    <script type='text/javascript' src="../js/QuanLyNhom.js"></script>
+    <script type="text/javascript" src="../js/jssor.js"></script>
+    <script type="text/javascript" src="../js/jssor.slider.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                    <h2 id="title">QUẢN LÝ NHÓM</h2>
+                    
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">Đường dẫn
+                    <input type="text" id='Path'/>
+                </div>
+               
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                     <div class="bd">
+                         <span>Nhóm</span>
+                         <img src="../hinhanh/icons8-add-24.png" class='add'/>
+                     </div>
+                      <div  class="bd">
+                          <ul id="TreeView">
+                              <li class="open" id="1"><span>Sản Phẩm</span><img src="../hinhanh/icons8-edit-24.png" class="edit"/>
+                                  <ul>
+                                      <li class="open" id="1_1"><span>Loại</span><img src="../hinhanh/icons8-edit-24.png" class="edit"/>
+                                          <ul>
+                                            <Li class="open" id="1_1_1"><span>Bán chạy</span><img src="../hinhanh/icons8-edit-24.png"class="edit"/></Li>
+                                            <li class="open" id="1_1_2"><span>Mới nhất</span><img src="../hinhanh/icons8-edit-24.png"class="edit"/></li>
+                                            
+                                          </ul>
+                                          
+                                      </li>
+                                      <li class="open" id="1_2"><span>Thương hiệu</span><img src="../hinhanh/icons8-edit-24.png"class="edit"/>
+                                          <ul>
+                                              <li class="open" id="1_2_1"><span>Dell</span><img src="../hinhanh/icons8-edit-24.png"class="edit"/></li>
+                                              <li class="open" id="1_2_2"><span>HP</span><img src="../hinhanh/icons8-edit-24.png"class="edit"/></li>
+                                              <Li class="open" id="1_2_3"><span>Macbook</span><img src="../hinhanh/icons8-edit-24.png"class="edit"/></Li>
+                                          </ul>
+                                          
+                                      </li>
+                                  </ul>
+                              </li>
+                              
+                          </ul>
+                      </div>
+                </div>
+              </div>
+            
+        </div>
+        <div id="bd-dialog">
+            <div class="container">
+              <div class="row">
+                  <div class="col-md-4">
+                    
+                  </div>
+                  <div class="col-lg-4 col-md-12">
+                    <div class="container" id="dialog">
+                        <div class="row">
+                            <div class="col-lg-12 title">
+                                <p>Tạo nhóm</p>
+                                <img src="../hinhanh/icons8-add-24.png" class="close">
+                            </div>
+                            <div class="col-lg-4 col-md-12">
+                                <p>Tên nhóm</p>
+                            </div>
+                            <div class="col-lg-8 col-md-12">
+                                <input type="text" id="new-group"/>
+                            </div>
+                            <div class="col-lg-4 col-md-12">
+                                <p>Nhóm cha</p>
+                            </div>
+                            <div class="col-lg-8 col-md-12">
+                                <div class="list">
+                                    
+                                    <div><span class="text-group"></span></div>
+                                </div>
+                                <div class="combobox">
+                                    <span style="cursor: pointer;" class="choose">--Lựa chọn--</span>
+                                    <ul id="TreeView-list">
+                              <li  id="1"><span>Sản Phẩm</span>
+                                  <ul>
+                                      <li id="1_1"><span>Loại</span>
+                                          <ul>
+                                            <Li id="1_1_1"><span>Bán chạy</span></Li>
+                                            <li id="1_1_2"><span>Mới nhất</span></li>
+                                          </ul>
+                                          
+                                      </li>
+                                      <li  id="1_2"><span>Thương hiệu</span>
+                                          <ul>
+                                            <li id="1_2_1"><span>Dell</span></li>
+                                              <li id="1_2_2"><span>HP</span></li>
+                                              <Li  id="1_2_3"><span>Macbook</span></Li>
+                                          </ul>
+                                      </li>
+                                  </ul>
+                              </li>
+                              
+                          </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+
+                            </div>
+                            <div class="col-lg-4 col-md-12">
+                                <button id="save">Lưu</button>
+                            </div>
+                            <div class="col-lg-4 col-md-12">
+                                <button id="exit" class="close">Thoát</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    
+                </div>
+                </div>
+                
+            </div>
+        </div>
+       
+        <div id="bd-dialog-edit">
+            <div class="container">
+              <div class="row">
+                  <div class="col-lg-4">
+                    
+                  </div>
+                  <div class="col-lg-4 col-md-12">
+                    <div class="container" id="dialog-edit">
+                        <div class="row">
+                            <div class="col-lg-12 title">
+                                <p>Sữa nhóm</p>
+                                <img src="../hinhanh/icons8-add-24.png" class="close">
+                            </div>
+                            <div class="col-lg-4 col-md-12">
+                                <p>Tên nhóm cũ</p>
+                            </div>
+                            <div class="col-lg-8 col-md-12">
+                                <input type="text" id="old-name" readonly/>
+                            </div>
+                            <div class="col-lg-4 col-md-12">
+                                <p>Tên nhóm mới</p>
+                            </div>
+                            <div class="col-lg-8 col-md-12">
+                                <input type="text" id="new-name"/>
+                            </div>
+                            <div class="col-lg-4 col-md-12">
+                                <p>Nhóm cha</p>
+                            </div>
+                            <div class="col-lg-8 col-md-12">
+                                <div class="list">
+                                    
+                                    <div><span class="text-group"></span></div>
+                                </div>
+                                <div class="combobox">
+                                    <span style="cursor: pointer;" class="choose">--Lựa chọn--</span>
+                                    <ul id="TreeView-list">
+                            
+                                        <li  id="1"><span>Sản Phẩm</span>
+                                            <ul>
+                                                <li id="1_1"><span>Loại</span>
+                                                    <ul>
+                                                      <Li id="1_1_1"><span>Bán chạy</span></Li>
+                                                      <li id="1_1_2"><span>Mới nhất</span></li>
+                                                    </ul>
+                                                    
+                                                </li>
+                                                <li  id="1_2"><span>Thương hiệu</span>
+                                                    <ul>
+                                                      <li id="1_2_1"><span>Dell</span></li>
+                                                        <li id="1_2_2"><span>HP</span></li>
+                                                        <Li  id="1_2_3"><span>Macbook</span></Li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                              
+                                    </ul>
+                                </div>
+                            </div>
+                           
+                            <div class="col-lg-4 col-md-12">
+                                <button id="save">Lưu</button>
+                            </div>
+                            <div class="col-lg-4 col-md-12">
+                                <button id="exit" class="close">Thoát</button>
+                            </div>
+                            <div class="col-lg-4">
+                                <button id="delete" class="close">Xoá</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    
+                </div>
+            </div>
+            </div>
+        </div>
+        
+    </section>
+</body>
+</html>
