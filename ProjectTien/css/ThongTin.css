@@ -1,0 +1,20 @@
+.sreach-product{
+    width:100%;
+    height: 35px;
+}
+.weight-col{
+    margin-top:10px;
+    
+}
+.btn-sreach{
+    width:100%;
+    height: 35px;
+    background-color: rgb(3, 151, 3);
+    border: 1px solid silver;
+    color:white;
+    font-size: 17px;
+}
+.btn-sreach img{
+   
+    margin-right: 5px;
+}
