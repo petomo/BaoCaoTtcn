@@ -1,0 +1,87 @@
+:root {
+    --bg1 :#9b59b6;
+    --br2 :#3498db;
+    --text:#26ade4;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+a {
+    text-decoration: none;
+}
+.trogiup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background: white
+}
+.ShopLaptop {
+    
+    background: url(/IMAGE/bg4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    padding: 40px 30px;
+    
+}
+.trogiup h2 {
+    margin-bottom: 40px;
+    color: black;
+}
+.trogiup h5 {
+    margin-bottom: 30px;
+}
+.ShopLaptop button {
+    height: 35px;
+    width: 100px;
+    margin-bottom: 1ss0px;
+    border-radius: 5px;
+    background: yellowgreen;
+    color:blue;
+    font-weight: bold;
+    
+}
+.form-text{
+    margin-bottom: 40px;
+    position: relative;
+}
+.text{
+    margin-bottom: 40px;
+    position: relative;
+}
+.form-text input {
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    cursor: pointer;
+    padding-left: 12px;
+    margin-bottom: 10px;
+}
+.form-text type {
+    position: absolute;
+    left: 12px;
+    bottom: 10px;
+}
+.text type {
+    position: absolute;
+    left: 12px;
+    bottom: 10px;
+    clear: both;
+}
+.text input {
+    width: 100%;
+    height: 150px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    cursor: pointer;
+    padding-left: 12px;
+    margin-bottom: 10px;
+    clear: both;
+}

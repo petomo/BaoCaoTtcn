@@ -1,0 +1,66 @@
+tbody, td, tfoot, th, thead, tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+}
+input{
+    width: -webkit-fill-available;
+}
+.mg-top{
+    margin-top:10px;
+}
+tr{
+    width: 100%;
+    float: left;
+}
+
+table tr:nth-child(odd){
+    background-color:#eee;
+}
+table tr:nth-child(even){
+    background-color:lightblue;
+}
+
+@media only screen and (min-width: 1000px) {
+    th{
+        width: 15%;
+        float: left;
+    }
+    td{
+        width: 15%;
+        float: left;
+    }
+    .flex-container{
+        display: flex;
+        flex-direction: unset;
+    }
+}	
+@media only screen and (max-width: 1000px) {
+    th{
+        width: 30%;
+        float: left;
+    }
+    td{
+        width: 30%;
+        float: left;
+    }
+
+    .flex-container{
+        display: flex;
+        flex-direction: unset;
+    }
+}
+@media only screen and (max-width: 600px) {
+    th{
+        width: 100%;
+        float: left;
+    }
+    td{
+        width: 100%;
+        float: left;
+    }
+    .flex-container{
+        display: block;
+    }
+}

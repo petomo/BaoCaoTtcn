@@ -1,0 +1,309 @@
+﻿
+<!DOCTYPE html>
+
+<head>
+    <title>Shop Laptop</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/main-style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/magnific-popup.cssver0.9.3.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/main.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/blue.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/owl.carousel.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/owl.transitions.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/animate.min.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/rateit.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/bootstrap-select.min.css') }}">
+
+	<script type='text/javascript' src="{{ url_for('static',filename='js/jquery-1.7.2.min.jsver1.7.2.js') }}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='bootstrap-5.1.0-dist/css/bootstrap.min.css') }}">
+    <script type='text/javascript' src="{{ url_for('static',filename='bootstrap-5.1.0-dist/js/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type='text/javascript' src="{{ url_for('static',filename='js/jquery-1.9.1.min.js') }}"></script>
+    <script type='text/javascript' src="{{ url_for('static',filename='js/jssor.js') }}"></script>
+    <script type='text/javascript' src="{{ url_for('static',filename='js/jssor.slider.js') }}"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+
+
+    <script type="text/javascript">
+        // Init navigation menu
+        jQuery(function() {
+            // main navigation init
+            jQuery('ul.sf-menu').superfish({
+                delay: 1000, // the delay in milliseconds that the mouse can remain outside a sub-menu without it closing
+                animation: {
+                    opacity: "show",
+                    height: "show"
+                }, // used to animate the sub-menu open
+                speed: "normal", // animation speed
+                autoArrows: true, // generation of arrow mark-up (for submenu)
+                disableHI: true // to disable hoverIntent detection
+            });
+
+            //Zoom fix
+            //IPad/IPhone
+            var viewportmeta = document.querySelector && document.querySelector('meta[name="viewport"]'),
+                ua = navigator.userAgent,
+                gestureStart = function() {
+                    viewportmeta.content = "width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0";
+                },
+                scaleFix = function() {
+                    if (viewportmeta && /iPhone|iPad/.test(ua) && !/Opera Mini/.test(ua)) {
+                        viewportmeta.content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
+                        document.addEventListener("gesturestart", gestureStart, false);
+                    }
+                };
+            scaleFix();
+        })
+    </script>
+</head>
+
+<body class="home">
+    <div id="motopress-main" class="main-holder">
+        <header class="motopress-wrapper header">
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <div class="header_top">
+                            <div class="row">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="logo pull-left" id="logo">
+                                    <a href="#" class=" logo_h__img">
+                                        <img src="{{ url_for('static',filename='hinhanh/header/logo.png') }}" alt="provise" title="provise">
+                                    </a>
+                                    <p class="logo_tagline">Shop Điện tử</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+
+                                <nav class="nav nav__primary clearfix ">
+                                    <ul id="topnav" class="sf-menu">
+                                        <li id="menu-item-1807" class="menu-item current_page_item">
+                                            <a href="/nhom">nhóm</a>
+                                        </li>
+                                        <li id="menu-item-1809" class="menu-item"><a href="/sanpham">sản phẩm</a></li>
+                                        <li id="menu-item-1804" class="menu-item"><a href="/user">ngưởi dùng</a></li>
+                                        <li id="menu-item-1810" class="menu-item">
+                                            <a href="/donhang">đơn hàng</a>
+                                        </li>
+                                    </ul>
+
+                                </nav>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                function changeClass() {
+                    document.getElementById('topnav').classList.toggle('dlb');
+                }
+                window.onload = function() {
+                    document.getElementById("logo").addEventListener('click', changeClass);
+                }
+            </script>
+        </header>
+
+        <section>
+
+            <div class="container">
+                <div class="wrap-admin">
+					<div class="menu-trai-admin">
+						<h3>Danh Mục</h3>
+							<div class="panel panel-default panel-info">
+								
+								<div>
+									<div class="list-group">
+										<a href="/sanpham" class="list-group-item">Danh Sách Sản Phẩm</a>
+										<dialog id="favDialog">
+											<form method="dialog">
+												<p>
+													<label>Mã loại:
+													<select style="padding-right: 40%;" >										  
+													<option>HP</option>
+													<option>Acer</option>
+													<option>MSI</option>
+													</select>
+												</label>
+												</p>
+												<p>
+													<label>Tên Loại:</label><BR>
+													<input name="name"  /> 
+												</p>
+		
+												<p>
+													<label for="thongso">Thông Số:</label><br>
+													<textarea id="thongso" name="thongso" rows="4" cols="50" >											   
+													</textarea>
+												</p>
+												<p>
+													<label>Đường dẫn ảnh:</label><textarea id="thongso" name="thongso" rows="1" cols="20"></textarea>										
+												</p>
+											<menu>
+												<button value="cancel">Cancel</button>
+												<input type = "button" value = "Confirm " onclick = "Warn();" />
+											</menu>
+											</form>
+										</dialog>
+										
+										<menu>
+											<button id="updateDetails">Thêm Mới Sản Phẩm</button>
+										</menu>
+										
+										<output aria-live="polite"></output>
+									</div>
+								</div>
+							</div>
+						   <div class="body-admin">          
+								<h2 style="text-align:center">Danh Sách Loại Phòng</h2>
+									<table class="table table-hover table-striped">
+										<colgroup>
+											<col style="width: 6%">
+											<col style="width: 10%">
+											<col style="width: 10%">
+											<col style="width: 44%">
+											<col style="width: 22%">
+											<col style="width: 8%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>STT</th>
+												<th>Mã Loại</th>
+												<th>Tên Loại</th>
+												<th>Thông Số</th>
+												<th>Đường Dẫn Ảnh</th>
+												<th>Thao Tác</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>Acer</td>
+												<td>Swift 3 AMD</td>
+												<td>CPU Intel Core i5-1035G1 thế hệ thứ 10<br>
+													Chip đồ họa Intel Iris Plus<br>
+													RAM/ HDD 8Gb<br>
+													Màn hình 14" ( 1920 x 1080 )<br>
+													SSD 512 GB<br>
+													Thời lượng pin kéo dài 7h31’<br>
+													</td>
+												<td>images\hot-deals\Acer-Swift-3_SF314-42_Silver-FP-Backlit_modelpreview.png</td>
+												<td><a href="#">Sửa</a>&nbsp;|&nbsp;<a href="#">Xóa</a></td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>Acer</td>
+												<td>Swift 5</td>
+												<td>CPU Intel Core i5 8265U <br>
+													Chip đồ họa Onboard, Intel HD Graphics 620<br>
+													RAM 8Gb<br>
+													Màn hình 14", 1920 x 1080 Pixel, LED-backlit ( 1920 x 1080 )<br>
+													SSD 256 GB<br>
+													PIN Lithium-ion 2 cell, Không tháo rời<br>
+												</td>
+												<td>\assets\images\hot-deals\Acer-Swift-5_SF514-55_FP_Green_modelpreview_evo.png</td>
+												<td><a href="#">Sửa</a>&nbsp;|&nbsp;<a href="#">Xóa</a></td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>Acer</td>
+												<td>Swift 7</td>
+												<td>CPU Intel Core i7 7Y75 <br>
+													Chip đồ họa Onboard, Intel HD Graphics 620<br>
+													RAM 8Gb<br>
+													Màn hình 13", Full HD ( 1920 x 1080 )<br>
+													SSD 256 GB<br>
+													PIN 4 cell, Không tháo rời<br>
+												</td>
+												<td>\assets\images\hot-deals\swift_7_SF714-52T-Black-Budlight_AL_preview.png</td>
+												<td><a href="#">Sửa</a>&nbsp;|&nbsp;<a href="#">Xóa</a></td>
+											</tr>
+											<tr>
+												<td>4</td>
+												<td>Acer</td>
+												<td>Porsche Design Acer Book RS</td>
+												<td>CPU Intel Core i7 thế hệ thứ 11 <br>
+													Chip đồ họa NVIDIA GeForce MX350<br>
+													RAM 16Gb<br>
+													Màn hình 14", Full-HD viền mỏng có kính Corning Gorilla Glass chống khuẩn.<br>
+													SSD 1TB<br>
+													Thời lượng pin kéo dài 17 tiếng<br>
+												</td>
+												<td>\assets\images\hot-deals\Porsche-Design-Acer-Book-RS_AP714-51_modelpreview.png</td>
+												<td><a href="#">Sửa</a>&nbsp;|&nbsp;<a href="#">Xóa</a></td>
+											</tr>
+											<tr>
+												<td>5</td>
+												<td>HP</td>
+												<td>Laptop HP Pavilion x360</td>
+												<td>CPU Intel Core i3-7130U (2.7 GHz / 3MB / 2 nhân, 4 luồng ) <br>
+													Chip đồ họa Intel HD Graphics 620<br>
+													RAM 1 x 4GB Onboard DDR4 Không nâng cấp<br>
+													Màn hình 14" ( 1920 x 1080 ) Full HD IPS cảm ứng , HD webcam<br>
+													HDD 1TB 5400RPM<br>
+													Pin 3 cell 52 Wh , Pin liền<br></td>
+												<td>\assets\images\hot-deals\71PszL71OhL._AC_SL1500_.jpg</td>
+												<td><a href="#">Sửa</a>&nbsp;|&nbsp;<a href="#">Xóa</a></td>
+											</tr>
+										</tbody>
+									</table>		
+									<!-- Simple pop-up dialog box containing a form -->
+		
+					</div>
+				</div>
+            </div>
+
+        </section>
+
+        
+    </div>
+    <div id="back-top-wrapper" class="visible-desktop">
+        <p id="back-top">
+            <a href="#top"><span></span></a>
+        </p>
+    </div>
+    <script type='text/javascript' src="{{ url_for('static',filename='js/superfish.jsver1.5.3.js') }}"></script>
+    <script type='text/javascript' src="{{ url_for('static',filename='js/jquery.mobilemenu.jsver1.0.js') }}"></script>
+	<script>
+		var updateButton = document.getElementById('updateDetails');
+		var favDialog = document.getElementById('favDialog');
+		var outputBox = document.querySelector('output');
+		var selectEl = document.querySelector('select');
+		var confirmBtn = document.getElementById('confirmBtn');
+
+		// "Update details" button opens the <dialog> modally
+		updateButton.addEventListener('click', function onOpen() {
+		if (typeof favDialog.showModal === "function") {
+			favDialog.showModal();
+		} else {
+			alert("The <dialog> API is not supported by this browser");
+		}
+		});
+		// "Favorite animal" input sets the value of the submit button
+		selectEl.addEventListener('change', function onSelect(e) {
+		//confirmBtn.value = selectEl.value;
+		});
+		favDialog.addEventListener('confirm', function onClose() {
+			alert("Thêm Thành Công");
+		});
+		
+	</script>
+	<script type = "text/javascript">
+		
+		   function Warn() {
+			  alert ("Lưu Thành Công");
+			  
+		   }
+		
+	 </script>
+</body>
+
+</html>
