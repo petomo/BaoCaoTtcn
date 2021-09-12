@@ -19,7 +19,7 @@
     <script type='text/javascript' src="{{ url_for('static',filename='js/jssor.js') }}"></script>
     <script type='text/javascript' src="{{ url_for('static',filename='js/jssor.slider.js') }}"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/Search.css') }}"/>
     <script type="text/javascript">
         // Init navigation menu
         jQuery(function() {
@@ -77,13 +77,13 @@
 
                                 <nav class="nav nav__primary clearfix ">
                                     <ul id="topnav" class="sf-menu">
-                                        <li id="menu-item-1807" class="menu-item current_page_item">
-                                            <a href="/nhom">nhóm</a>
+                                        <li id="menu-item-1807" class="menu-item">
+                                            <a href="/nhom">Nhóm</a>
                                         </li>
-                                        <li id="menu-item-1809" class="menu-item"><a href="/sanpham">sản phẩm</a></li>
-                                        <li id="menu-item-1804" class="menu-item"><a href="/user">ngưởi dùng</a></li>
-                                        <li id="menu-item-1810" class="menu-item">
-                                            <a href="/donhang">đơn hàng</a>
+                                        <li id="menu-item-1809" class="menu-item"><a href="/sanpham">Sản Phẩm</a></li>
+                                        <li id="menu-item-1804" class="menu-item"><a href="/user">Ngưởi Dùng</a></li>
+                                        <li id="menu-item-1810" class="menu-item current_page_item">
+                                            <a href="/donhang">Đơn hàng</a>
                                         </li>
                                     </ul>
 
@@ -107,26 +107,34 @@
         <section>
 
             <div class="container">
+                 <div class="row">
+                    <div class="col-md-10 col-sm-12 weight-col">
+                        <input type="text" placeholder="Bạn muốn tìm gì?" class="sreach-product"/>
+                    </div>
+                    <div class="col-md-2 col-sm-12 weight-col">
+                        <button class="btn-sreach"><img src="{{ url_for('static',filename='hinhanh/icons8-search-24.png') }}">Tìm kiếm</button>
+                    </div>
+                </div>
                 <form>
                     <table class="tb_bd">
                         <tr>
                             <th>
-                                time
+                                Time
                             </th>
                             <th>
-                                ma don
+                                Mã đơn
                             </th>
                             <th>
-                                trạng thái
+                                Trạng thái
                             </th>
                             <th>
-                                tổng tiền
+                                Tổng tiền
                             </th>
                             <th>
-                                Mã Khách hàng
+                                Mã khách hàng
                             </th>
                             <th>
-                                Tên Khách hàng
+                                Tên khách hàng
                             </th>
                         </tr>
                         <tr>

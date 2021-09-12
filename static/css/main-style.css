@@ -11,7 +11,7 @@ ul {
 	list-style:none;
 }
 section{
-	padding-top:100px;
+	padding-top: 90px;
 }
 .main-holder { overflow:hidden; }
 .main-holder input[type="reset"], .main-holder input[type="submit"] {
@@ -140,24 +140,22 @@ a:hover { text-decoration:none; }
 	height:40px;
 }
 .home .header {
-	background: #6c757d;
-    z-index: 10;
-    position: absolute;
-    left: 1px;
-    right: 0;
-    top: -42px;
-    line-height: 95px;
+	background:none;
+	z-index:10;
+	position:absolute;
+	left:1px;
+	right:0;
+	top:-42px;
 }
 .logo {
 	text-transform:uppercase;
 	color:#fff;
 	float: left;
-	margin-top: -10px;
+	line-height: 91px;
 }
 .logo_tagline {
-	padding-top:7px;
 	color:#fff;
-	margin:0;
+	margin: -5px 0 5px;
 	font:12px/12px Arial, Helvetica, sans-serif;
 }
 .logo a { color:#fff; }
@@ -845,7 +843,6 @@ a:hover { text-decoration:none; }
 	color:rgba(0, 0, 0, 0.637) !important;
 	font:14px/20px "Trebuchet MS", Arial, Helvetica, sans-serif;
 	border:0;
-	padding:10px 30px 10px;
 	border-radius:5px;
 	position:relative;
 	text-transform:uppercase;
@@ -960,10 +957,7 @@ a:hover { text-decoration:none; }
 		background-color: none;
 		
 		position: fixed;
-	}
-	.dlb{
-		
-	}
+	}	
 }
 @media only screen and (max-width: 767px) {
 	.owl-1.carousel-wrap h2 { font-size:24px; }
@@ -1032,7 +1026,6 @@ a:hover { text-decoration:none; }
 }
 	.parallax-slider #mainCaptionHolder .slider_caption h1, .parallax-slider #mainCaptionHolder .slider_caption h2 { font-size:30px; }
 }
-
 .ie8 .nav__primary { padding-right:0; }
 .ie8 .sf-menu>li+li { margin-left:0 !important; }
 

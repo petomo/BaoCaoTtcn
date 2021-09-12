@@ -4,11 +4,11 @@ app=Flask(__name__)
 
 @app.route('/')
 def index():
-   return render_template('index.html')
+   return render_template('TrangChu.html')
 
 @app.route('/trangchu')
 def trangchu():
-   return render_template('index.html')
+   return render_template('TrangChu.html')
 
 @app.route('/SPBanChay')
 def SPBanChay():
@@ -49,7 +49,6 @@ def cark():
 @app.route('/thongtin')
 def thongtin():
    return render_template('thongtin.html')
-
 @app.route('/admin')
 def quanlynhom():
    return render_template('QuanLyNhom.html')
@@ -73,6 +72,7 @@ def qldon():
 @app.route('/xemdonhang')
 def xemdon():
    return render_template('ThongTinDonHang.html')
+
 
 
 if __name__ == '__main__':

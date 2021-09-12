@@ -24,11 +24,11 @@ table tr:nth-child(even){
 
 @media only screen and (min-width: 1000px) {
     th{
-        width: 15%;
+        width: 16.65%;
         float: left;
     }
     td{
-        width: 15%;
+        width: 16.65%;
         float: left;
     }
     .flex-container{
@@ -38,11 +38,11 @@ table tr:nth-child(even){
 }	
 @media only screen and (max-width: 1000px) {
     th{
-        width: 30%;
+        width: 33.33%;
         float: left;
     }
     td{
-        width: 30%;
+        width: 33.33%;
         float: left;
     }
 

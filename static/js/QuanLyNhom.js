@@ -132,7 +132,7 @@ jQuery(document).ready(function ($) {
             if(TextGroup=='--Lựa chọn--'){
                 number_li['TreeView']++;
                 
-                $('#TreeView').append('<li class="open" id="'+number_li['TreeView']+'"><span>'+NewGroup+'</span><img src="../hinhanh/icons8-edit-24.png"class="edit"/></li>');
+                $('#TreeView').append('<li class="open" id="'+number_li['TreeView']+'"><span>'+NewGroup+'</span><img src="/static/hinhanh/icons8-edit-24.png"class="edit"/></li>');
                 $('#dialog #TreeView-list').append('<li id="'+number_li['TreeView']+'" clas><span>'+NewGroup+'</span></li>');
                 $('#dialog-edit #TreeView-list').append('<li id="'+number_li['TreeView']+'" clas><span>'+NewGroup+'</span></li>');
                 number_li[number_li['TreeView']]=0;
@@ -144,12 +144,12 @@ jQuery(document).ready(function ($) {
                
                 new_id= id+'_'+number_li[id.toString()];
                 if(number_li[id.toString()]<=1){
-                    $('#TreeView #'+id).append('<ul><li class="open" id="'+new_id+'"><span>'+NewGroup+'</span><img src="../hinhanh/icons8-edit-24.png"class="edit"/></li><ul>');
+                    $('#TreeView #'+id).append('<ul><li class="open" id="'+new_id+'"><span>'+NewGroup+'</span><img src="/static/hinhanh/icons8-edit-24.png" class="edit"/></li><ul>');
                     $('#TreeView-list #'+id).append('<ul><li id="'+new_id+'"><span>'+NewGroup+'</span></li><ul>');
                     $('#dialog-edit #TreeView-list #'+id).append('<ul><li id="'+new_id+'"><span>'+NewGroup+'</span></li><ul>');
                 }
                 else{
-                    $('#TreeView #'+id+' ul:eq(0)').append('<li class="open" id="'+new_id+'"><span>'+NewGroup+'</span><img src="../hinhanh/icons8-edit-24.png"class="edit"/></li>');
+                    $('#TreeView #'+id+' ul:eq(0)').append('<li class="open" id="'+new_id+'"><span>'+NewGroup+'</span><img src="/static/hinhanh/icons8-edit-24.png" class="edit"/></li>');
                     $('#TreeView-list #'+id+' ul:eq(0)').append('<li id="'+new_id+'"><span>'+NewGroup+'</span></li>');
                     $('#dialog-edit #TreeView-list #'+id+' ul:eq(0)').append('<li id="'+new_id+'"><span>'+NewGroup+'</span></li>');
                 }

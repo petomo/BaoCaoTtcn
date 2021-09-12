@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=D:\Visuacode\ProjectTTCN\BaoCaoTTCN\namevenv
+set VIRTUAL_ENV=D:\TTCN-ShopLatop\BaoCaoTTCN\namevenv
 
 if not defined PROMPT set PROMPT=$P$G
 

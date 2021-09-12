@@ -5,7 +5,9 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/main.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/Search.css') }}"/>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/main-style.css') }}" id='theme52702-css' media='all'>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/magnific-popup.cssver0.9.3.css') }}" id='magnific-popup-css' media='all'>
     <script type="text/javascript" src="{{ url_for('static',filename='js/jquery-1.7.2.min.jsver1.7.2.js')}}"></script>
@@ -71,11 +73,11 @@
 
                                 <nav class="nav nav__primary clearfix ">
                                     <ul id="topnav" class="sf-menu">
-                                        <li id="menu-item-1807" class="menu-item current_page_item">
-                                            <a href="#">Trang Chủ</a>
+                                        <li id="menu-item-1807" class="menu-item">
+                                            <a href="/trangchu">Trang Chủ</a>
                                         </li>
 
-                                        <li id="menu-item-1808" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="#">Kiểu Thiết bị</a>
+                                        <li id="menu-item-1808" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children current_page_item"><a href="#">Kiểu Thiết bị</a>
                                             <ul class="sub-menu">
                                                 <li id="menu-item-1815" class="menu-item"><a href="/SPGiamGia">khuyến mãi</a></li>
                                                 <li id="menu-item-1816" class="menu-item"><a href="/SPHot">Hot</a></li>
@@ -118,6 +120,14 @@
 
         <section>
             <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-sm-12 weight-col">
+                        <input type="text" placeholder="Bạn muốn tìm gì?" class="sreach-product"/>
+                    </div>
+                    <div class="col-md-2 col-sm-12 weight-col">
+                        <button class="btn-sreach"><img src="{{ url_for('static',filename='hinhanh/icons8-search-24.png') }}">Tìm kiếm</button>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-md-12 col-center"><span class="left"></span><span class="title-text">SẢN PHẨM HOT</span><span class="right"></span></div>
                 </div>

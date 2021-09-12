@@ -15,6 +15,7 @@
 	    <!-- Bootstrap Core CSS -->
 	    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/bootstrap.min.css') }}">
 	    <!-- Customizable CSS -->
+       
 		<script type='text/javascript' src= "{{ url_for('static',filename='js/jquery-1.7.2.min.jsver1.7.2.js') }}"></script>
 		<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/main.css') }}">
 		<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
@@ -26,6 +27,9 @@
 		<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/bootstrap-select.min.css') }}">
 		<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/lightbox.css') }}">
 		<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/main-style.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='bootstrap-5.1.0-dist/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/mian.css') }}">
+    <script type='text/javascript' src="{{ url_for('static',filename='bootstrap-5.1.0-dist/js/bootstrap.min.js') }}"></script>
 	
 		<script type='text/javascript' src= "{{ url_for('static',filename='js/jquery-1.9.1.min.js') }}"></script>
 	<script type='text/javascript' src= "{{ url_for('static',filename='js/bootstrap-select.min.js') }}"></script>
@@ -104,7 +108,7 @@
 		})
 	</script>
 </head>
-    <body class="cnt-home">
+    <body class="home">
 		
 		<!-- ============================================== HEADER ============================================== -->
 			<div id="motopress-main" class="main-holder">
@@ -114,957 +118,958 @@
 							<div class="span12">
 								<div class="header_top">
 									<div class="row">
-										
+		
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-4"> 
+									<div class="col-4">
 										<div class="logo pull-left" id="logo">
 											<a href="#" class=" logo_h__img">
 												<img src="{{ url_for('static',filename='hinhanh/header/logo.png') }}" alt="provise" title="provise">
 											</a>
-											<p class="logo_tagline">Shop Điện tử</p> 
+											<p class="logo_tagline">Shop Điện tử</p>
 										</div>
 									</div>
 									<div class="col-md-3">
-		 
+		
 										<nav class="nav nav__primary clearfix ">
 											<ul id="topnav" class="sf-menu">
-												<li id="menu-item-1807" class="menu-item current_page_item">
-													<a href="#">Trang Chủ</a>
+												<li id="menu-item-1807" class="menu-item">
+													<a href="/trangchu">Trang Chủ</a>
 												</li>
-												
+		
 												<li id="menu-item-1808" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="#">Kiểu Thiết bị</a>
 													<ul class="sub-menu">
 														<li id="menu-item-1815" class="menu-item"><a href="/SPGiamGia">khuyến mãi</a></li>
-														<li id="menu-item-1816" class="menu-item"><a href="/SPHot">Hot</a></li>
 														<li id="menu-item-1814" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="#">Loại thiết bị</a>
 															<ul class="sub-menu">
-															<li id="menu-item-1883" class="menu-item"><a href="/SPHot">Laptop HP</a></li>
-															<li id="menu-item-1882" class="menu-item"><a href="/SPHot">Laptop Acer</a></li>
-															<li id="menu-item-1881" class="menu-item"><a href="/SPHot">Laptop Dell</a></li>
-															<li id="menu-item-1881" class="menu-item"><a href="/SPHot">Laptop Lenovo</a></li>
+																<li id="menu-item-1883" class="menu-item"><a href="/SPHot">Laptop HP</a></li>
+																<li id="menu-item-1882" class="menu-item"><a href="/SPHot">Laptop Acer</a></li>
+																<li id="menu-item-1881" class="menu-item"><a href="/SPHot">Laptop Dell</a></li>
+																<li id="menu-item-1881" class="menu-item"><a href="/SPHot">Laptop Lenovo</a></li>
 															</ul>
 														</li>
 														<li id="menu-item-1813" class="menu-item"><a href="/SPBanChay">Bán Chạy</a></li>
 														<li id="menu-item-1813" class="menu-item"><a href="/SPMoiNhat">Mới Cập Nhật</a></li>
-														
 													</ul>
 												</li>
 												<li id="menu-item-1809" class="menu-item"><a href="/trogiup">Trợ giúp</a></li>
-												<li id="menu-item-1804" class="menu-item"><a href="/giohang">Giỏ hàng</a></li>
+												<li id="menu-item-1804" class="menu-item current_page_item"><a href="/giohang">Giỏ hàng</a></li>
 												<li id="menu-item-1810" class="menu-item">
-													<a href="/dangnhap">Đăng nhập</a>
+													<a href="dangnhap">Đăng nhập</a>
 												</li>
 											</ul>
-											
+		
 										</nav>
-										
+		
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 					<script>
-						function changeClass(){
-							document.getElementById ('topnav'). classList.toggle ('dlb');
+						function changeClass() {
+							document.getElementById('topnav').classList.toggle('dlb');
 						}
-						window.onload = function(){
-						document.getElementById("logo").addEventListener( 'click', changeClass);
-			}
+						window.onload = function() {
+							document.getElementById("logo").addEventListener('click', changeClass);
+						}
 					</script>
 				</header>
 			
 
 <!-- ============================================== HEADER : END ============================================== -->
-<div class="body-content outer-top-xs">
-	<div class='container'>
-		<div class='row single-product'>
-			<div class='col-md-3 sidebar'>
-				<div class="sidebar-module-container">
-				<div class="home-banner outer-top-n">
-				<img src="{{ url_for('static',filename='images/banners/laptop_br1.jpg') }}" alt="Image" height="150" width="260" >
-				</div>		
-  
-    
-    
-    	<!-- ============================================== HOT DEALS ============================================== -->
-<div class="sidebar-widget hot-deals wow fadeInUp outer-top-vs home-banner" height="150" width="260">
-	<h3 class="section-title">Ưu đãi</h3>
-	<div class="owl-carousel sidebar-carousel custom-carousel owl-theme outer-top-xs" >
+<section>
+	<div class="body-content outer-top-xs">
+		<div class='container'>
+			<div class='row single-product'>
+				<div class='col-md-3 sidebar'>
+					<div class="sidebar-module-container">
+					<div class="home-banner outer-top-n">
+					<img src="{{ url_for('static',filename='images/banners/laptop_br1.jpg') }}" alt="Image" height="150" width="260" >
+					</div>		
+	  
 		
+		
+			<!-- ============================================== HOT DEALS ============================================== -->
+	<div class="sidebar-widget hot-deals wow fadeInUp outer-top-vs home-banner" height="150" width="260">
+		<h3 class="section-title">Ưu đãi</h3>
+		<div class="owl-carousel sidebar-carousel custom-carousel owl-theme outer-top-xs" >
+			
+															<div class="item">
+						<div class="products">
+							<div class="hot-deal-wrapper">
+								<div class="image">
+									<img src="{{ url_for('static',filename='images/hot-deals/acer.webp') }}" alt="">
+								</div>
+								<div class="sale-offer-tag"><span>Giảm<br>10%</span></div>
+								<div class="timing-wrapper">
+									<div class="box-wrapper">
+										<div class="date box">
+											<span class="key">120</span>
+											<span class="value">Ngày</span>
+										</div>
+									</div>
+									
+									<div class="box-wrapper">
+										<div class="hour box">
+											<span class="key">20</span>
+											<span class="value">Giờ</span>
+										</div>
+									</div>
+	
+									<div class="box-wrapper">
+										<div class="minutes box">
+											<span class="key">36</span>
+											<span class="value">Phút</span>
+										</div>
+									</div>
+	
+									<div class="box-wrapper hidden-md">
+										<div class="seconds box">
+											<span class="key">60</span>
+											<span class="value">Giây</span>
+										</div>
+									</div>
+								</div>
+							</div> 
+	
+							<div class="product-info text-left m-t-20">
+								<h3 class="name"><a href="/thongtin">Swift 3 AMD</a></h3>
+								<div class="rating rateit-small"></div>
+	
+								<div class="product-price">	
+									<span class="price">
+										18.900.000 đ
+									</span>
+										
+									<span class="price-before-discount"> 20.990.000 đ</span>					
+								
+								</div> 
+								
+							</div>
+	
+							<div class="cart clearfix animate-effect">
+								<div class="action">
+									
+									<div  class="add-cart-button btn-group">
+										<button  class="btn btn-primary icon" data-toggle="dropdown" type="button">
+											<i class="fa fa-shopping-cart"></i>													
+										</button>
+										<button class="btn btn-primary cart-btn" type="button" href="giohang.html">Thêm vào giỏ hàng</button>
+																
+									</div>
+									
+								</div> 
+							</div> 
+						</div>	
+						</div>		        
 														<div class="item">
-					<div class="products">
-						<div class="hot-deal-wrapper">
-							<div class="image">
-								<img src="{{ url_for('static',filename='images/hot-deals/acer.webp') }}" alt="">
-							</div>
-							<div class="sale-offer-tag"><span>Giảm<br>10%</span></div>
-							<div class="timing-wrapper">
-								<div class="box-wrapper">
-									<div class="date box">
-										<span class="key">120</span>
-										<span class="value">Ngày</span>
-									</div>
+						<div class="products">
+							<div class="hot-deal-wrapper">
+								<div class="image">
+									<img src="{{ url_for('static',filename='images/hot-deals/pavilionX360.webp') }}" alt="">
 								</div>
-				                
-				                <div class="box-wrapper">
-									<div class="hour box">
-										<span class="key">20</span>
-										<span class="value">Giờ</span>
+								<div class="sale-offer-tag"><span>Giảm<br>15%</span></div>
+								<div class="timing-wrapper">
+									<div class="box-wrapper">
+										<div class="date box">
+											<span class="key">120</span>
+											<span class="value">Days</span>
+										</div>
 									</div>
-								</div>
-
-				                <div class="box-wrapper">
-									<div class="minutes box">
-										<span class="key">36</span>
-										<span class="value">Phút</span>
-									</div>
-								</div>
-
-				                <div class="box-wrapper hidden-md">
-									<div class="seconds box">
-										<span class="key">60</span>
-										<span class="value">Giây</span>
-									</div>
-								</div>
-							</div>
-						</div> 
-
-						<div class="product-info text-left m-t-20">
-							<h3 class="name"><a href="/thongtin">Swift 3 AMD</a></h3>
-							<div class="rating rateit-small"></div>
-
-							<div class="product-price">	
-								<span class="price">
-									18.900.000 đ
-								</span>
 									
-							    <span class="price-before-discount"> 20.990.000 đ</span>					
-							
+									<div class="box-wrapper">
+										<div class="hour box">
+											<span class="key">20</span>
+											<span class="value">HRS</span>
+										</div>
+									</div>
+	
+									<div class="box-wrapper">
+										<div class="minutes box">
+											<span class="key">36</span>
+											<span class="value">MINS</span>
+										</div>
+									</div>
+	
+									<div class="box-wrapper hidden-md">
+										<div class="seconds box">
+											<span class="key">60</span>
+											<span class="value">SEC</span>
+										</div>
+									</div>
+								</div>
 							</div> 
-							
-						</div>
-
-						<div class="cart clearfix animate-effect">
-							<div class="action">
+	
+							<div class="product-info text-left m-t-20">
+								<h3 class="name"><a href="/thongtin">Laptop HP Pavilion x360</a></h3>
+								<div class="rating rateit-small"></div>
+	
+								<div class="product-price">	
+									<span class="price">
+										11.600.000 đ
+									</span>
+										
+									<span class="price-before-discount">13.500.000 đ</span>					
 								
-								<div  class="add-cart-button btn-group">
-									<button  class="btn btn-primary icon" data-toggle="dropdown" type="button">
-										<i class="fa fa-shopping-cart"></i>													
-									</button>
-									<button class="btn btn-primary cart-btn" type="button" href="giohang.html">Thêm vào giỏ hàng</button>
-															
-								</div>
+								</div> 
 								
 							</div> 
-						</div> 
-					</div>	
-					</div>		        
-													<div class="item">
-					<div class="products">
-						<div class="hot-deal-wrapper">
-							<div class="image">
-								<img src="{{ url_for('static',filename='images/hot-deals/pavilionX360.webp') }}" alt="">
-							</div>
-							<div class="sale-offer-tag"><span>Giảm<br>15%</span></div>
-							<div class="timing-wrapper">
-								<div class="box-wrapper">
-									<div class="date box">
-										<span class="key">120</span>
-										<span class="value">Days</span>
-									</div>
-								</div>
-				                
-				                <div class="box-wrapper">
-									<div class="hour box">
-										<span class="key">20</span>
-										<span class="value">HRS</span>
-									</div>
-								</div>
-
-				                <div class="box-wrapper">
-									<div class="minutes box">
-										<span class="key">36</span>
-										<span class="value">MINS</span>
-									</div>
-								</div>
-
-				                <div class="box-wrapper hidden-md">
-									<div class="seconds box">
-										<span class="key">60</span>
-										<span class="value">SEC</span>
-									</div>
-								</div>
-							</div>
-						</div> 
-
-						<div class="product-info text-left m-t-20">
-							<h3 class="name"><a href="/thongtin">Laptop HP Pavilion x360</a></h3>
-							<div class="rating rateit-small"></div>
-
-							<div class="product-price">	
-								<span class="price">
-									11.600.000 đ
-								</span>
+	
+							<div class="cart clearfix animate-effect">
+								<div class="action">
 									
-							    <span class="price-before-discount">13.500.000 đ</span>					
-							
-							</div> 
-							
-						</div> 
-
-						<div class="cart clearfix animate-effect">
-							<div class="action">
-								
-								<div class="add-cart-button btn-group">
-									<button class="btn btn-primary icon" data-toggle="dropdown" type="button">
-										<i class="fa fa-shopping-cart"></i>													
-									</button>
-									<button class="btn btn-primary cart-btn" type="button"> Thêm vào giỏ hàng</button>
-															
-								</div>
-								
-							</div> 
-						</div> 
-					</div>	
-					</div>		        
-													<div class="item">
-					<div class="products">
-						<div class="hot-deal-wrapper">
-							<div class="image">
-								<img src="{{ url_for('static',filename='images/hot-deals/hp240g8.webp') }}" alt="">
-							</div>
-							<div class="sale-offer-tag"><span>Giảm<br>5%</span></div>
-							<div class="timing-wrapper">
-								<div class="box-wrapper">
-									<div class="date box">
-										<span class="key">120</span>
-										<span class="value">Days</span>
+									<div class="add-cart-button btn-group">
+										<button class="btn btn-primary icon" data-toggle="dropdown" type="button">
+											<i class="fa fa-shopping-cart"></i>													
+										</button>
+										<button class="btn btn-primary cart-btn" type="button"> Thêm vào giỏ hàng</button>
+																
 									</div>
-								</div>
-				                
-				                <div class="box-wrapper">
-									<div class="hour box">
-										<span class="key">20</span>
-										<span class="value">HRS</span>
-									</div>
-								</div>
-
-				                <div class="box-wrapper">
-									<div class="minutes box">
-										<span class="key">36</span>
-										<span class="value">MINS</span>
-									</div>
-								</div>
-
-				                <div class="box-wrapper hidden-md">
-									<div class="seconds box">
-										<span class="key">60</span>
-										<span class="value">SEC</span>
-									</div>
-								</div>
-							</div>
-						</div> 
-
-						<div class="product-info text-left m-t-20">
-							<h3 class="name"><a href="/thongtin">Acer Nitro 5 A515-56-36UT</a></h3>
-							<div class="rating rateit-small"></div>
-
-							<div class="product-price">	
-								<span class="price">
-									20.400.000 đ
-								</span>
 									
-							    <span class="price-before-discount">21.490.000 đ</span>					
-							
+								</div> 
 							</div> 
-							
-						</div> 
-
-						<div class="cart clearfix animate-effect">
-							<div class="action">
-								
-								<div class="add-cart-button btn-group">
-									<button class="btn btn-primary icon" data-toggle="dropdown" type="button">
-										<i class="fa fa-shopping-cart"></i>													
-									</button>
-									<button class="btn btn-primary cart-btn" type="button">Thêm vào giỏ hàng</button>
-															
+						</div>	
+						</div>		        
+														<div class="item">
+						<div class="products">
+							<div class="hot-deal-wrapper">
+								<div class="image">
+									<img src="{{ url_for('static',filename='images/hot-deals/hp240g8.webp') }}" alt="">
 								</div>
+								<div class="sale-offer-tag"><span>Giảm<br>5%</span></div>
+								<div class="timing-wrapper">
+									<div class="box-wrapper">
+										<div class="date box">
+											<span class="key">120</span>
+											<span class="value">Days</span>
+										</div>
+									</div>
+									
+									<div class="box-wrapper">
+										<div class="hour box">
+											<span class="key">20</span>
+											<span class="value">HRS</span>
+										</div>
+									</div>
+	
+									<div class="box-wrapper">
+										<div class="minutes box">
+											<span class="key">36</span>
+											<span class="value">MINS</span>
+										</div>
+									</div>
+	
+									<div class="box-wrapper hidden-md">
+										<div class="seconds box">
+											<span class="key">60</span>
+											<span class="value">SEC</span>
+										</div>
+									</div>
+								</div>
+							</div> 
+	
+							<div class="product-info text-left m-t-20">
+								<h3 class="name"><a href="/thongtin">Acer Nitro 5 A515-56-36UT</a></h3>
+								<div class="rating rateit-small"></div>
+	
+								<div class="product-price">	
+									<span class="price">
+										20.400.000 đ
+									</span>
+										
+									<span class="price-before-discount">21.490.000 đ</span>					
+								
+								</div> 
 								
 							</div> 
-						</div> 
-					</div>	
-					</div>		        
+	
+							<div class="cart clearfix animate-effect">
+								<div class="action">
+									
+									<div class="add-cart-button btn-group">
+										<button class="btn btn-primary icon" data-toggle="dropdown" type="button">
+											<i class="fa fa-shopping-cart"></i>													
+										</button>
+										<button class="btn btn-primary cart-btn" type="button">Thêm vào giỏ hàng</button>
+																
+									</div>
+									
+								</div> 
+							</div> 
+						</div>	
+						</div>		        
+							
+			
+		</div>
+	</div>
+	<!-- ============================================== HOT DEALS: END ============================================== -->					
+	
+	<!-- ============================================== Testimonials============================================== -->
+	<!-- <div class="sidebar-widget  wow fadeInUp outer-top-vs ">
+		<div id="advertisement" class="advertisement">
+			<div class="item">
+				<div class="avatar"><img src="data:image/png;base64,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" alt="Image"></div>
+			<div class="testimonials"><em>"</em> Acer Inc. là tập đoàn đa quốc gia về thiết bị điện tử và phần cứng máy tính của Đài Loan có trụ sở tại Tịch Chỉ, Tân Bắc, Đài Loan.<em>"</em></div>
+			<div class="clients_author">Jason Chen	<span>Acer Inc. (Acer)</span>	</div> 
+			</div> 
+	
+			 <div class="item">
+				 <div class="avatar"><img src="https://iconape.com/wp-content/png_logo_vector/msi-gaming-g-series-logo.png" alt="Image"></div>
+			<div class="testimonials"><em>"</em>MSI là một tập đoàn công nghệ thông tin đa quốc gia có trụ sở chính ở Tân Bắc, Đài Loan, với logo là một con rồng màu đỏ.<em>"</em></div>
+			<div class="clients_author">Joseph Hsu	<span>Micro-Star International Co., Ltd</span>	</div>    
+			</div> 
+	
+			<div class="item">
+				<div class="avatar"><img src="https://store-images.s-microsoft.com/image/apps.12266.13510798882876448.144d96a2-7f1d-4651-a506-f067722dbac9.138c4cad-2f40-463d-8dfb-7b895ca65ad4?mode=scale&q=90&h=300&w=300" alt="Image"></div>
+			<div class="testimonials"><em>"</em> Tập đoàn công nghệ thông tin lớn trên thế giới. HP thành lập năm 1939 tại Palo Alto, California, Hoa Kỳ. HP hiện có trụ sở tại Cupertino, California, Hoa Kỳ.<em>"</em></div>
+			<div class="clients_author"> David Packard, William Redington Hewlett	<span>Hewlett-Packard</span>	</div>
+			</div> 
+	
+		</div> 
+	</div> -->
+		
+	<!-- ============================================== Testimonials: END ============================================== -->
+	
+	 
+	
+		</div>
+	</div><!-- /.sidebar -->
+	<div class='col-md-9'>
+		<div class="detail-block">
+			<div class="row  wow fadeInUp">
 						
-	    
-    </div>
-</div>
-<!-- ============================================== HOT DEALS: END ============================================== -->					
-
-<!-- ============================================== Testimonials============================================== -->
-<!-- <div class="sidebar-widget  wow fadeInUp outer-top-vs ">
-	<div id="advertisement" class="advertisement">
-        <div class="item">
-            <div class="avatar"><img src="data:image/png;base64,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" alt="Image"></div>
-		<div class="testimonials"><em>"</em> Acer Inc. là tập đoàn đa quốc gia về thiết bị điện tử và phần cứng máy tính của Đài Loan có trụ sở tại Tịch Chỉ, Tân Bắc, Đài Loan.<em>"</em></div>
-		<div class="clients_author">Jason Chen	<span>Acer Inc. (Acer)</span>	</div> 
-        </div> 
-
-         <div class="item">
-         	<div class="avatar"><img src="https://iconape.com/wp-content/png_logo_vector/msi-gaming-g-series-logo.png" alt="Image"></div>
-		<div class="testimonials"><em>"</em>MSI là một tập đoàn công nghệ thông tin đa quốc gia có trụ sở chính ở Tân Bắc, Đài Loan, với logo là một con rồng màu đỏ.<em>"</em></div>
-		<div class="clients_author">Joseph Hsu	<span>Micro-Star International Co., Ltd</span>	</div>    
-        </div> 
-
-        <div class="item">
-            <div class="avatar"><img src="https://store-images.s-microsoft.com/image/apps.12266.13510798882876448.144d96a2-7f1d-4651-a506-f067722dbac9.138c4cad-2f40-463d-8dfb-7b895ca65ad4?mode=scale&q=90&h=300&w=300" alt="Image"></div>
-		<div class="testimonials"><em>"</em> Tập đoàn công nghệ thông tin lớn trên thế giới. HP thành lập năm 1939 tại Palo Alto, California, Hoa Kỳ. HP hiện có trụ sở tại Cupertino, California, Hoa Kỳ.<em>"</em></div>
-		<div class="clients_author"> David Packard, William Redington Hewlett	<span>Hewlett-Packard</span>	</div>
-        </div> 
-
-    </div> 
-</div> -->
-    
-<!-- ============================================== Testimonials: END ============================================== -->
-
- 
-
-	</div>
-</div><!-- /.sidebar -->
-<div class='col-md-9'>
-	<div class="detail-block">
-		<div class="row  wow fadeInUp">
+				<div class="col-xs-12 col-sm-6 col-md-5 gallery-holder" >
+					<div class="product-item-holder size-big single-product-gallery small-gallery">
+	
+						<div id="owl-single-product" >
+							<div class="single-product-gallery-item" id="slide1" style="vertical-align:middle;text-align: center;">
+								<a data-lightbox="image-1" data-title="Gallery" href="{{ url_for('static',filename='images/hot-deals/71PszL71OhL._AC_SL1500_.jpg') }}" style="height: 100%; width: 250px;">
+									<img class="img-responsive" alt="" src="{{ url_for('static',filename='images/blank.gif') }}" data-echo="{{ url_for('static',filename='images/hot-deals/71PszL71OhL._AC_SL1500_.jpg') }}" >
+								</a>
+							</div><!-- /.single-product-gallery-item -->
+	
+							<div class="single-product-gallery-item " id="slide2"style="vertical-align:middle;text-align: center;">
+								<a data-lightbox="image-1" data-title="Gallery" href="{{ url_for('static',filename='images/hot-deals/81Gc-LClsTL._AC_SL1500_.jpg') }}"style="height: 100%; width: 250px ">
+									<img class="img-responsive" alt="" src="{{ url_for('static',filename='images/blank.gif') }}" data-echo="{{ url_for('static',filename='images/hot-deals/81Gc-LClsTL._AC_SL1500_.jpg') }}">
+								</a>
+							</div><!-- /.single-product-gallery-item -->
+	
+							<div class="single-product-gallery-item" id="slide3"style="vertical-align:middle;text-align: center;">
+								<a data-lightbox="image-1" data-title="Gallery" href="{{ url_for('static',filename='images/hot-deals/71PszL71OhL._AC_SL1500_.jpg') }}"style="height: 100%; width: 250px ">
+									<img class="img-responsive" alt="" src="{{ url_for('static',filename='images/blank.gif') }}" data-echo="{{ url_for('static',filename='images/hot-deals/71PszL71OhL._AC_SL1500_.jpg') }}" >
+								</a>
+								
+							</div>			   
+						</div>
 					
-			<div class="col-xs-12 col-sm-6 col-md-5 gallery-holder" >
-				<div class="product-item-holder size-big single-product-gallery small-gallery">
-
-					<div id="owl-single-product" >
-						<div class="single-product-gallery-item" id="slide1" style="vertical-align:middle;text-align: center;">
-							<a data-lightbox="image-1" data-title="Gallery" href="{{ url_for('static',filename='images/hot-deals/71PszL71OhL._AC_SL1500_.jpg') }}" style="height: 100%; width: 250px;">
-								<img class="img-responsive" alt="" src="{{ url_for('static',filename='images/blank.gif') }}" data-echo="{{ url_for('static',filename='images/hot-deals/71PszL71OhL._AC_SL1500_.jpg') }}" >
-							</a>
-						</div><!-- /.single-product-gallery-item -->
-
-						<div class="single-product-gallery-item " id="slide2"style="vertical-align:middle;text-align: center;">
-							<a data-lightbox="image-1" data-title="Gallery" href="{{ url_for('static',filename='images/hot-deals/81Gc-LClsTL._AC_SL1500_.jpg') }}"style="height: 100%; width: 250px ">
-								<img class="img-responsive" alt="" src="{{ url_for('static',filename='images/blank.gif') }}" data-echo="{{ url_for('static',filename='images/hot-deals/81Gc-LClsTL._AC_SL1500_.jpg') }}">
-							</a>
-						</div><!-- /.single-product-gallery-item -->
-
-						<div class="single-product-gallery-item" id="slide3"style="vertical-align:middle;text-align: center;">
-							<a data-lightbox="image-1" data-title="Gallery" href="{{ url_for('static',filename='images/hot-deals/71PszL71OhL._AC_SL1500_.jpg') }}"style="height: 100%; width: 250px ">
-								<img class="img-responsive" alt="" src="{{ url_for('static',filename='images/blank.gif') }}" data-echo="{{ url_for('static',filename='images/hot-deals/71PszL71OhL._AC_SL1500_.jpg') }}" >
-							</a>
-							
-						</div>			   
-					</div>
 				
-			
-					<div class="single-product-gallery-thumbs gallery-thumbs">
-
-						<div id="owl-single-product-thumbnails" >
-							
-							<div class="item">
-								<a class="horizontal-thumb active" data-target="#owl-single-product" data-slide="1" href="#slide1">
-									<img  class="img-responsive" width="85" alt="" src="{{ url_for('static',filename='images/blank.gif') }}" data-echo="{{ url_for('static',filename='images/hot-deals/71PszL71OhL._AC_SL1500_.jpg') }}">
-								</a>
-							</div>
-
-							<div class="item">
-								<a class="horizontal-thumb" data-target="#owl-single-product" data-slide="2" href="#slide2">
-									<img class="img-responsive" width="85" alt="" src="{{ url_for('static',filename='images/blank.gif') }}" data-echo="{{ url_for('static',filename='images/hot-deals/81Gc-LClsTL._AC_SL1500_.jpg') }}"style="padding:10px;margin: auto;">
-								</a>
-							</div>
-							<div class="item">
-
-								<a class="horizontal-thumb" data-target="#owl-single-product" data-slide="3" href="#slide3" >
-									<img class="img-responsive" width="85" alt="" src="{{ url_for('static',filename='images/blank.gif') }}" data-echo="{{ url_for('static',filename='images/hot-deals/71PszL71OhL._AC_SL1500_.jpg')}}"style="padding:10px;margin: auto;">
-								</a>
+						<div class="single-product-gallery-thumbs gallery-thumbs">
+	
+							<div id="owl-single-product-thumbnails" >
 								
+								<div class="item">
+									<a class="horizontal-thumb active" data-target="#owl-single-product" data-slide="1" href="#slide1">
+										<img  class="img-responsive" width="85" alt="" src="{{ url_for('static',filename='images/blank.gif') }}" data-echo="{{ url_for('static',filename='images/hot-deals/71PszL71OhL._AC_SL1500_.jpg') }}">
+									</a>
+								</div>
+	
+								<div class="item">
+									<a class="horizontal-thumb" data-target="#owl-single-product" data-slide="2" href="#slide2">
+										<img class="img-responsive" width="85" alt="" src="{{ url_for('static',filename='images/blank.gif') }}" data-echo="{{ url_for('static',filename='images/hot-deals/81Gc-LClsTL._AC_SL1500_.jpg') }}"style="padding:10px;margin: auto;">
+									</a>
+								</div>
+								<div class="item">
+	
+									<a class="horizontal-thumb" data-target="#owl-single-product" data-slide="3" href="#slide3" >
+										<img class="img-responsive" width="85" alt="" src="{{ url_for('static',filename='images/blank.gif') }}" data-echo="{{ url_for('static',filename='images/hot-deals/71PszL71OhL._AC_SL1500_.jpg')}}"style="padding:10px;margin: auto;">
+									</a>
+									
+								</div>
 							</div>
-						</div>
-					</div><!-- /.gallery-thumbs -->
-
-				</div><!-- /.single-product-gallery -->
-			</div><!-- /.gallery-holder -->        			
-					<div class="col-sm-6 col-md-7 product-info-block">
-						<div class="product-info">
-							<h1 class="name">Laptop HP Pavilion x360</h1>
-							
-							<div class="rating-reviews m-t-20">
-								<div class="row">
-									<div class="col-sm-3">
-										<div class="rating rateit-small"></div>
-									</div>
-									<div class="col-sm-8">
-										<div class="reviews">
-											<a href="#" class="lnk">(13 Đánh giá)</a>
-										</div>
-									</div>
-								</div><!-- /.row -->		
-							</div><!-- /.rating-reviews -->
-
-							<div class="stock-container info-container m-t-10">
-								<div class="row">
-									<div class="col-sm-2">
-										<div class="stock-box">
-											<span class="label" style="font-weight: bold;">Tình trạng:  </span>
-										</div>	
-									</div>
-									<div class="col-sm-9">
-										<div class="stock-box">
-											<span class="value">  Sẵn hàng</span>
-										</div>	
-									</div>
-								</div><!-- /.row -->	
-							</div><!-- /.stock-container -->
-							
-							<div class="stock-container info-container m-t-10">
-								<div class="row">
-									<div class="col-sm-2">
-										<div class="stock-box">
-											<span class="label" style="font-weight: bold;">Lượt xem : </span>
-										</div>	
-									</div>
-									<div class="col-sm-9">
-										<div class="stock-box">
-											<span>470</span>
-										</div>	
-									</div>
-								</div><!-- /.row -->	
-							</div><!-- /.stock-container -->
-							<div class="description-container m-t-20">
-								<li>THÔNG SỐ KỸ THUẬT</li>
-								<li>Thương hiệu ACER Series laptop Spin 3</li> 
-								<li>CPU Intel Core i3-7130U ( 2.7 GHz / 3MB / 2 nhân, 4 luồng )</li> 
-								<li>Chip đồ họa Intel HD Graphics 620</li> 
-								<li>RAM 1 x 4GB Onboard DDR4 Không nâng cấp</li> 
-								<li>Màn hình 14" ( 1920 x 1080 ) Full HD IPS cảm ứng , HD webcam</li> 
-								<li>Lưu trữ 1TB HDD 5400RPM</li> 
-								<li>Pin 3 cell 52 Wh , Pin liền</li> 
-								<li>Kích thước 33.5 x 23 x 2 cm</li>
-							</div><!-- /.description-container -->
-
-							<div class="price-container info-container m-t-20">
-								<div class="row">
-									
-
-									<div class="col-sm-6">
-										<div class="price-box">
-											<span class="price">11.600.000 đ</span>
-											<span class="price-strike">13.500.000 đ</span>
-										</div>
-									</div>
-
-									<div class="col-sm-6">
-										<div class="favorite-button m-t-10">
-											<a class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="Wishlist" href="#">
-											    <i class="fa fa-heart"></i>
-											</a>
-											
-										</div>
-									</div>
-
-								</div><!-- /.row -->
-							</div><!-- /.price-container -->
-
-							<div class="quantity-container info-container">
-								<div class="row">
-									
-									<div class="col-sm-2">
-										<span class="label">SL:</span>
-									</div>
-									
-									<div class="col-sm-2">
-										<div class="cart-quantity">
-											<div class="quant-input">
-								                <div class="arrows">
-								                  <div class="arrow plus gradient"><span class="ir"><i class="icon fa fa-sort-asc"></i></span></div>
-								                  <div class="arrow minus gradient"><span class="ir"><i class="icon fa fa-sort-desc"></i></span></div>
-								                </div>
-								                <input type="text" value="1">
-							              </div>
-							            </div>
-									</div>
-
-									<div class="col-sm-7">
-										<a href="/giohang" class="btn btn-primary"><i class="fa fa-shopping-cart inner-right-vs"></i> Thêm vào giỏ hàng</a>
-									</div>
-
-									
-								</div><!-- /.row -->
-							</div><!-- /.quantity-container -->
-
-							
-
-							
-
-							
-						</div><!-- /.product-info -->
-					</div><!-- /.col-sm-7 -->
-		</div><!-- /.row -->
-    </div>
-				
-				<div class="product-tabs inner-bottom-xs  wow fadeInUp">
-					<div class="row">
-						<div class="col-sm-3">
-							<ul id="product-tabs" class="nav nav-tabs nav-tab-cell">
-								<li class="active"><a data-toggle="tab" href="#description">THÔNG SỐ</a></li>
-								<li><a data-toggle="tab" href="#review">ĐÁNH GIÁ</a></li>
-							</ul><!-- /.nav-tabs #product-tabs -->
-						</div>
-						<div class="col-sm-9">
-
-							<div class="tab-content">
+						</div><!-- /.gallery-thumbs -->
+	
+					</div><!-- /.single-product-gallery -->
+				</div><!-- /.gallery-holder -->        			
+						<div class="col-sm-6 col-md-7 product-info-block">
+							<div class="product-info">
+								<h1 class="name">Laptop HP Pavilion x360</h1>
 								
-								<div id="description" class="tab-pane in active" style="font-size:medium;">
-									<div class="product-tab">
-										<h4 style="font-weight: bold; text-align: center;">Review sản phẩm</h4><br>
-										<img class="img-responsive" width="550" style="margin-left: auto; margin-right: auto;border-radius: 2%;" alt="" src="{{ url_for('static',filename='images/hot-deals/4463015_Cover_HP-Pavilion-x360.jpg') }}" data-echo="{{ url_for('static',filename='images/hot-deals/71PszL71OhL._AC_SL1500_.jpg')}}">
-											<br>
-											Pavilion x360 là mẫu laptop phổ thông với màn hình xoay 360 độ được HP giới thiệu đến người dùng thời gian gần đây. So với sản phẩm cũ, thiết kế Pavilion mới có những thay đổi để tạo sự khác biệt. Chẳng hạn mức độ hoàn thiện trong thiết kế cao hơn, mang lại cảm giác liền mạch khi xoay gập màn hình. Bên cạnh đó, x360 14-cd0084TU còn được nâng cấp cấu hình phần cứng với chip Core i thế hệ 8, màn hình cảm ứng 14 inch Full HD và cả bút HP pen sử dụng ở chế độ máy tính bảng.
-										<div class="infogram-embed" data-id="1e258105-c54f-4903-9f63-d84475614dd3" data-type="interactive" data-title="HP Pavilion x360 14-cd0084TU - Cham diem"></div><script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/1e258105-c54f-4903-9f63-d84475614dd3" style="color:#989898!important;text-decoration:none!important;" target="_blank"></a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow"></a></div>
-											Về cơ bản, thiết kế Pavilion x360 14 không có nhiều điểm khác biệt với laptop truyền thống khi sử dụng trong công việc. Tuy nhiên điểm độc đáo của sản phẩm thể hiện ở khả năng chuyển đổi giữa laptop và tabet nhờ hệ thống bản lề đặc biệt giúp góc mở màn hình đạt đến 360 độ, cho phép tùy biến theo nhiều cách khác nhau tùy nhu cầu sử dụng.<br><br>
-										<img class="img-responsive" width="550" style="margin-left: auto; margin-right: auto;border-radius: 2%;" alt="" src="{{ url_for('static',filename='images/hot-deals/4463026_Pavilion_x360_14_23.jpg')}}"><br>
-											Với kích thước 32,3 x 22,4 x 1,97 cm và nặng khoảng 1,59 kg, Pavilion x360 trông khá gọn nhẹ với những người dùng thường xuyên di chuyển. Lớp vỏ ngoài chất liệu nhựa ABS, các góc cạnh thân máy bo tròn và họa tiết kim cương cách điệu ở phần loa giúp tạo thêm điểm nhấn cho sản phẩm, mang lại cảm giác mỏng nhẹ, mềm mại hơn.<br><br>
-										<img class="img-responsive" width="550" style="margin-left: auto; margin-right: auto;border-radius: 2%;" alt="" src="{{ url_for('static',filename='images/hot-deals/4463027_Pavilion_x360_14_18.jpg')}}"><br>
-										<h4 style="font-weight: bold; text-align: center;">Ưu điểm</h4><br>
-										<li>
-											Thiết kế hấp dẫn với khả năng tùy biến theo nhu cầu người dùng.
-										</li>
-										<li>
-											Cổng kết nối đa dạng.
-										</li>
-										<li>
-											Kèm HP Pen để sử dụng như một máy tính bảng.
-										</li>
-										<li>
-											Tản nhiệt hiệu quả, độ ồn thấp.
-										</li><br>
-										<h4 style="font-weight: bold; text-align: center;">Khuyết điểm</h4><br>
-										<li>
-											Cấu hình trang bị HDD truyền thống nên tốc độ truy xuất dữ liệu chậm.
-										</li><br>
-										<img class="img-responsive" width="550" style="margin-left: auto; margin-right: auto;border-radius: 2%;" alt="" src="{{ url_for('static',filename='images/hot-deals/4463078_Pavilion_x360_14_22.jpg')}}"><br><br>
-
-									</div>	
-								</div><!-- /.tab-pane -->
-
-								<div id="review" class="tab-pane">
-									<div class="product-tab">
-																				
-										<div class="product-reviews">
-											<h4 class="title">Customer Reviews</h4>
-
+								<div class="rating-reviews m-t-20">
+									<div class="row">
+										<div class="col-sm-3">
+											<div class="rating rateit-small"></div>
+										</div>
+										<div class="col-sm-8">
 											<div class="reviews">
-												<div class="review">
-													<div class="review-title"><span class="summary">Sản phẩm tuyệt vời</span><span class="date"><i class="fa fa-calendar"></i><span>1 days ago</span></span></div>
-													<div class="text">"Nhẹ và tiện lợi"</div>
-																										</div>
-											
-											</div><!-- /.reviews -->
-										</div><!-- /.product-reviews -->
-										
-
-										
-										<div class="product-add-review">
-											<h4 class="title">Write your own review</h4>
-											<div class="review-table">
-												<div class="table-responsive">
-													<table class="table">	
-														<thead>
-															<tr>
-																<th class="cell-label">&nbsp;</th>
-																<th>1 star</th>
-																<th>2 stars</th>
-																<th>3 stars</th>
-																<th>4 stars</th>
-																<th>5 stars</th>
-															</tr>
-														</thead>	
-														<tbody>
-															<tr>
-																<td class="cell-label">Quality</td>
-																<td><input type="radio" name="quality" class="radio" value="1"></td>
-																<td><input type="radio" name="quality" class="radio" value="2"></td>
-																<td><input type="radio" name="quality" class="radio" value="3"></td>
-																<td><input type="radio" name="quality" class="radio" value="4"></td>
-																<td><input type="radio" name="quality" class="radio" value="5"></td>
-															</tr>
-															<tr>
-																<td class="cell-label">Price</td>
-																<td><input type="radio" name="quality" class="radio" value="1"></td>
-																<td><input type="radio" name="quality" class="radio" value="2"></td>
-																<td><input type="radio" name="quality" class="radio" value="3"></td>
-																<td><input type="radio" name="quality" class="radio" value="4"></td>
-																<td><input type="radio" name="quality" class="radio" value="5"></td>
-															</tr>
-															<tr>
-																<td class="cell-label">Value</td>
-																<td><input type="radio" name="quality" class="radio" value="1"></td>
-																<td><input type="radio" name="quality" class="radio" value="2"></td>
-																<td><input type="radio" name="quality" class="radio" value="3"></td>
-																<td><input type="radio" name="quality" class="radio" value="4"></td>
-																<td><input type="radio" name="quality" class="radio" value="5"></td>
-															</tr>
-														</tbody>
-													</table><!-- /.table .table-bordered -->
-												</div><!-- /.table-responsive -->
-											</div><!-- /.review-table -->
-											
-											<div class="review-form">
-												<div class="form-container">
-													<form role="form" class="cnt-form">
-														
-														<div class="row">
-															<div class="col-sm-6">
-																<div class="form-group">
-																	<label for="exampleInputName">Your Name <span class="astk">*</span></label>
-																	<input type="text" class="form-control txt" id="exampleInputName" placeholder="">
-																</div><!-- /.form-group -->
-																<div class="form-group">
-																	<label for="exampleInputSummary">Summary <span class="astk">*</span></label>
-																	<input type="text" class="form-control txt" id="exampleInputSummary" placeholder="">
-																</div><!-- /.form-group -->
-															</div>
-
-															<div class="col-md-6">
-																<div class="form-group">
-																	<label for="exampleInputReview">Review <span class="astk">*</span></label>
-																	<textarea class="form-control txt txt-review" id="exampleInputReview" rows="4" placeholder=""></textarea>
-																</div><!-- /.form-group -->
-															</div>
-														</div><!-- /.row -->
-														
-														<div class="action text-right">
-															<button class="btn btn-primary btn-upper">SUBMIT REVIEW</button>
-														</div><!-- /.action -->
-
-													</form><!-- /.cnt-form -->
-												</div><!-- /.form-container -->
-											</div><!-- /.review-form -->
-
-										</div><!-- /.product-add-review -->										
-										
-							        </div><!-- /.product-tab -->
-								</div><!-- /.tab-pane -->
-
-								<!-- <div id="tags" class="tab-pane">
-									<div class="product-tag">
-										
-										<h4 class="title">Product Tags</h4>
-										<form role="form" class="form-inline form-cnt">
-											<div class="form-container">
-									
-												<div class="form-group">
-													<label for="exampleInputTag">Add Your Tags: </label>
-													<input type="email" id="exampleInputTag" class="form-control txt">
-													
-
-												</div>
-
-												<button class="btn btn-upper btn-primary" type="submit">ADD TAGS</button>
-											</div> 
-										</form> 
-
-										<form role="form" class="form-inline form-cnt">
-											<div class="form-group">
-												<label>&nbsp;</label>
-												<span class="text col-md-offset-3">Use spaces to separate tags. Use single quotes for phrases.</span>
+												<a href="#" class="lnk">(13 Đánh giá)</a>
 											</div>
-										</form> 
-
-									</div> 
-								</div>  -->
-
-							</div><!-- /.tab-content -->
-						</div><!-- /.col -->
-					</div><!-- /.row -->
-				</div><!-- /.product-tabs -->
-
-				<!-- ============================================== HÀNG BÁN CHẠY ============================================== -->
-<section class="section featured-product wow fadeInUp">
-	<h3 class="section-title">Hàng bán chạy</h3>
-	<div class="owl-carousel home-owl-carousel upsell-product custom-carousel owl-theme outer-top-xs">
-	    	
-		<div class="item item-carousel">
-			<div class="products">
-				
-			<div class="product">		
-				<div class="product-image">
-					<div class="image">
-						<a href="/thongtin">
-							<img src="{{ url_for('static',filename='images/hot-deals/Acer-Swift-3_SF314-42_Silver-FP-Backlit_modelpreview.png')}} " alt=""></a>
-					</div><!-- /.image -->			
-
-								<div class="tag sale"><span>Sale</span></div>            		   
-				</div><!-- /.product-image -->
-				<div class="product-info text-left">
-					<h3 class="name"><a href="/thongtin">Swift 3x</a></h3>
-					<div class="rating rateit-small"></div>
-					<div class="description"></div>
-
-					<div class="product-price">	
-						<span class="price">
-							26.600.000 đ				</span>
-													<span class="price-before-discount">27.699.000 đ</span>
-											
-					</div><!-- /.product-price -->
-					
-				</div><!-- /.product-info -->
-				<div class="cart clearfix animate-effect">
-						<div class="action">
-							<ul class="list-unstyled">
-								<li class="add-cart-button btn-group">
-									<button class="btn btn-primary icon" data-toggle="dropdown" type="button">
-										<i class="fa fa-shopping-cart"></i>													
-									</button>
-									<button class="btn btn-primary cart-btn" type="button">Thêm vào giỏ hàng</button>
-															
-								</li>
-							
-								<li class="lnk wishlist">
-									<a class="add-to-cart" href="/thongtin" title="Wishlist">
-										<i class="icon fa fa-heart"></i>
-									</a>
-								</li>
-
-								<li class="lnk">
-									<a class="add-to-cart" href="/thongtin" title="Compare">
-										<i class="fa fa-signal"></i>
-									</a>
-								</li>
-							</ul>
-						</div><!-- /.action -->
-				</div><!-- /.cart -->
-			</div><!-- /.product -->
-			</div><!-- /.product -->
+										</div>
+									</div><!-- /.row -->		
+								</div><!-- /.rating-reviews -->
+	
+								<div class="stock-container info-container m-t-10">
+									<div class="row">
+										<div class="col-sm-2">
+											<div class="stock-box">
+												<span class="label" style="font-weight: bold;">Tình trạng:  </span>
+											</div>	
+										</div>
+										<div class="col-sm-9">
+											<div class="stock-box">
+												<span class="value">  Sẵn hàng</span>
+											</div>	
+										</div>
+									</div><!-- /.row -->	
+								</div><!-- /.stock-container -->
+								
+								<div class="stock-container info-container m-t-10">
+									<div class="row">
+										<div class="col-sm-2">
+											<div class="stock-box">
+												<span class="label" style="font-weight: bold;">Lượt xem : </span>
+											</div>	
+										</div>
+										<div class="col-sm-9">
+											<div class="stock-box">
+												<span>470</span>
+											</div>	
+										</div>
+									</div><!-- /.row -->	
+								</div><!-- /.stock-container -->
+								<div class="description-container m-t-20">
+									<li>THÔNG SỐ KỸ THUẬT</li>
+									<li>Thương hiệu ACER Series laptop Spin 3</li> 
+									<li>CPU Intel Core i3-7130U ( 2.7 GHz / 3MB / 2 nhân, 4 luồng )</li> 
+									<li>Chip đồ họa Intel HD Graphics 620</li> 
+									<li>RAM 1 x 4GB Onboard DDR4 Không nâng cấp</li> 
+									<li>Màn hình 14" ( 1920 x 1080 ) Full HD IPS cảm ứng , HD webcam</li> 
+									<li>Lưu trữ 1TB HDD 5400RPM</li> 
+									<li>Pin 3 cell 52 Wh , Pin liền</li> 
+									<li>Kích thước 33.5 x 23 x 2 cm</li>
+								</div><!-- /.description-container -->
+	
+								<div class="price-container info-container m-t-20">
+									<div class="row">
+										
+	
+										<div class="col-sm-6">
+											<div class="price-box">
+												<span class="price">11.600.000 đ</span>
+												<span class="price-strike">13.500.000 đ</span>
+											</div>
+										</div>
+	
+										<div class="col-sm-6">
+											<div class="favorite-button m-t-10">
+												<a class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="Wishlist" href="#">
+													<i class="fa fa-heart"></i>
+												</a>
+												
+											</div>
+										</div>
+	
+									</div><!-- /.row -->
+								</div><!-- /.price-container -->
+	
+								<div class="quantity-container info-container">
+									<div class="row">
+										
+										<div class="col-sm-2">
+											<span class="label">SL:</span>
+										</div>
+										
+										<div class="col-sm-2">
+											<div class="cart-quantity">
+												<div class="quant-input">
+													<div class="arrows">
+													  <div class="arrow plus gradient"><span class="ir"><i class="icon fa fa-sort-asc"></i></span></div>
+													  <div class="arrow minus gradient"><span class="ir"><i class="icon fa fa-sort-desc"></i></span></div>
+													</div>
+													<input type="text" value="1">
+											  </div>
+											</div>
+										</div>
+	
+										<div class="col-sm-7">
+											<a href="/giohang" class="btn btn-primary"><i class="fa fa-shopping-cart inner-right-vs"></i> Thêm vào giỏ hàng</a>
+										</div>
+	
+										
+									</div><!-- /.row -->
+								</div><!-- /.quantity-container -->
+	
+								
+	
+								
+	
+								
+							</div><!-- /.product-info -->
+						</div><!-- /.col-sm-7 -->
+			</div><!-- /.row -->
 		</div>
-		
-	
-		<div class="item item-carousel">
-			<div class="products">
-				
-	<div class="product">		
-		<div class="product-image">
-			<div class="image">
-				<a href="/thongtin">
-					<img src="{{ url_for('static',filename='images/hot-deals/Acer-Swift-3_SF314-42_Silver-FP-Backlit_modelpreview.png') }}" data-echo="{{ url_for('static',filename='images/hot-deals/Acer-Swift-3_SF314-42_Silver-FP-Backlit_modelpreview.png')}}" alt=""></a>
-			</div><!-- /.image -->			
-
-			                        <div class="tag hot"><span>hot</span></div>		   
-		</div><!-- /.product-image -->
-			
-		
-		<div class="product-info text-left">
-			<h3 class="name"><a href="/thongtin">Swift 5</a></h3>
-			<div class="rating rateit-small"></div>
-			<div class="description"></div>
-
-			<div class="product-price">	
-				<span class="price">
-					28.600.000 đ				</span>
-										     <span class="price-before-discount">28.690.000 đ</span>
-									
-			</div><!-- /.product-price -->
-			
-		</div><!-- /.product-info -->
-					<div class="cart clearfix animate-effect">
-				<div class="action">
-					<ul class="list-unstyled">
-						<li class="add-cart-button btn-group">
-							<button class="btn btn-primary icon" data-toggle="dropdown" type="button">
-								<i class="fa fa-shopping-cart"></i>													
-							</button>
-							<button class="btn btn-primary cart-btn" type="button">Thêm vào giỏ hàng</button>
-													
-						</li>
-	                   
-		                <li class="lnk wishlist">
-							<a class="add-to-cart" href="/thongtin" title="Wishlist">
-								 <i class="icon fa fa-heart"></i>
-							</a>
-						</li>
-
-						<li class="lnk">
-							<a class="add-to-cart" href="/thongtin" title="Compare">
-							    <i class="fa fa-signal"></i>
-							</a>
-						</li>
-					</ul>
-				</div><!-- /.action -->
-			</div><!-- /.cart -->
-			</div><!-- /.product -->
-      
-			</div><!-- /.products -->
-		</div><!-- /.item -->
-	
-		<div class="item item-carousel">
-			<div class="products">
-				
-			<div class="product">		
-				<div class="product-image">
-					<div class="image">
-						<a href="/thongtin">
-							<img src="{{ url_for('static',filename='images/hot-deals/Acer-Swift-3_SF314-42_Silver-FP-Backlit_modelpreview.png')}} " alt=""></a>
-					</div><!-- /.image -->			
-
-								<div class="tag sale"><span>Sale</span></div>            		   
-				</div><!-- /.product-image -->
-				<div class="product-info text-left">
-					<h3 class="name"><a href="/thongtin">Swift 3x</a></h3>
-					<div class="rating rateit-small"></div>
-					<div class="description"></div>
-
-					<div class="product-price">	
-						<span class="price">
-							26.600.000 đ				</span>
-													<span class="price-before-discount">27.699.000 đ</span>
-											
-					</div><!-- /.product-price -->
 					
-				</div><!-- /.product-info -->
-				<div class="cart clearfix animate-effect">
-						<div class="action">
-							<ul class="list-unstyled">
-								<li class="add-cart-button btn-group">
-									<button class="btn btn-primary icon" data-toggle="dropdown" type="button">
-										<i class="fa fa-shopping-cart"></i>													
-									</button>
-									<button class="btn btn-primary cart-btn" type="button">Thêm vào giỏ hàng</button>
+					<div class="product-tabs inner-bottom-xs  wow fadeInUp">
+						<div class="row">
+							<div class="col-sm-3">
+								<ul id="product-tabs" class="nav nav-tabs nav-tab-cell">
+									<li class="active"><a data-toggle="tab" href="#description">THÔNG SỐ</a></li>
+									<li><a data-toggle="tab" href="#review">ĐÁNH GIÁ</a></li>
+								</ul><!-- /.nav-tabs #product-tabs -->
+							</div>
+							<div class="col-sm-9">
+	
+								<div class="tab-content">
+									
+									<div id="description" class="tab-pane in active" style="font-size:medium;">
+										<div class="product-tab">
+											<h4 style="font-weight: bold; text-align: center;">Review sản phẩm</h4><br>
+											<img class="img-responsive" width="550" style="margin-left: auto; margin-right: auto;border-radius: 2%;" alt="" src="{{ url_for('static',filename='images/hot-deals/4463015_Cover_HP-Pavilion-x360.jpg') }}" data-echo="{{ url_for('static',filename='images/hot-deals/71PszL71OhL._AC_SL1500_.jpg')}}">
+												<br>
+												Pavilion x360 là mẫu laptop phổ thông với màn hình xoay 360 độ được HP giới thiệu đến người dùng thời gian gần đây. So với sản phẩm cũ, thiết kế Pavilion mới có những thay đổi để tạo sự khác biệt. Chẳng hạn mức độ hoàn thiện trong thiết kế cao hơn, mang lại cảm giác liền mạch khi xoay gập màn hình. Bên cạnh đó, x360 14-cd0084TU còn được nâng cấp cấu hình phần cứng với chip Core i thế hệ 8, màn hình cảm ứng 14 inch Full HD và cả bút HP pen sử dụng ở chế độ máy tính bảng.
+											<div class="infogram-embed" data-id="1e258105-c54f-4903-9f63-d84475614dd3" data-type="interactive" data-title="HP Pavilion x360 14-cd0084TU - Cham diem"></div><script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/1e258105-c54f-4903-9f63-d84475614dd3" style="color:#989898!important;text-decoration:none!important;" target="_blank"></a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow"></a></div>
+												Về cơ bản, thiết kế Pavilion x360 14 không có nhiều điểm khác biệt với laptop truyền thống khi sử dụng trong công việc. Tuy nhiên điểm độc đáo của sản phẩm thể hiện ở khả năng chuyển đổi giữa laptop và tabet nhờ hệ thống bản lề đặc biệt giúp góc mở màn hình đạt đến 360 độ, cho phép tùy biến theo nhiều cách khác nhau tùy nhu cầu sử dụng.<br><br>
+											<img class="img-responsive" width="550" style="margin-left: auto; margin-right: auto;border-radius: 2%;" alt="" src="{{ url_for('static',filename='images/hot-deals/4463026_Pavilion_x360_14_23.jpg')}}"><br>
+												Với kích thước 32,3 x 22,4 x 1,97 cm và nặng khoảng 1,59 kg, Pavilion x360 trông khá gọn nhẹ với những người dùng thường xuyên di chuyển. Lớp vỏ ngoài chất liệu nhựa ABS, các góc cạnh thân máy bo tròn và họa tiết kim cương cách điệu ở phần loa giúp tạo thêm điểm nhấn cho sản phẩm, mang lại cảm giác mỏng nhẹ, mềm mại hơn.<br><br>
+											<img class="img-responsive" width="550" style="margin-left: auto; margin-right: auto;border-radius: 2%;" alt="" src="{{ url_for('static',filename='images/hot-deals/4463027_Pavilion_x360_14_18.jpg')}}"><br>
+											<h4 style="font-weight: bold; text-align: center;">Ưu điểm</h4><br>
+											<li>
+												Thiết kế hấp dẫn với khả năng tùy biến theo nhu cầu người dùng.
+											</li>
+											<li>
+												Cổng kết nối đa dạng.
+											</li>
+											<li>
+												Kèm HP Pen để sử dụng như một máy tính bảng.
+											</li>
+											<li>
+												Tản nhiệt hiệu quả, độ ồn thấp.
+											</li><br>
+											<h4 style="font-weight: bold; text-align: center;">Khuyết điểm</h4><br>
+											<li>
+												Cấu hình trang bị HDD truyền thống nên tốc độ truy xuất dữ liệu chậm.
+											</li><br>
+											<img class="img-responsive" width="550" style="margin-left: auto; margin-right: auto;border-radius: 2%;" alt="" src="{{ url_for('static',filename='images/hot-deals/4463078_Pavilion_x360_14_22.jpg')}}"><br><br>
+	
+										</div>	
+									</div><!-- /.tab-pane -->
+	
+									<div id="review" class="tab-pane">
+										<div class="product-tab">
+																					
+											<div class="product-reviews">
+												<h4 class="title">Customer Reviews</h4>
+	
+												<div class="reviews">
+													<div class="review">
+														<div class="review-title"><span class="summary">Sản phẩm tuyệt vời</span><span class="date"><i class="fa fa-calendar"></i><span>1 days ago</span></span></div>
+														<div class="text">"Nhẹ và tiện lợi"</div>
+																											</div>
+												
+												</div><!-- /.reviews -->
+											</div><!-- /.product-reviews -->
+											
+	
+											
+											<div class="product-add-review">
+												<h4 class="title">Write your own review</h4>
+												<div class="review-table">
+													<div class="table-responsive">
+														<table class="table">	
+															<thead>
+																<tr>
+																	<th class="cell-label">&nbsp;</th>
+																	<th>1 star</th>
+																	<th>2 stars</th>
+																	<th>3 stars</th>
+																	<th>4 stars</th>
+																	<th>5 stars</th>
+																</tr>
+															</thead>	
+															<tbody>
+																<tr>
+																	<td class="cell-label">Quality</td>
+																	<td><input type="radio" name="quality" class="radio" value="1"></td>
+																	<td><input type="radio" name="quality" class="radio" value="2"></td>
+																	<td><input type="radio" name="quality" class="radio" value="3"></td>
+																	<td><input type="radio" name="quality" class="radio" value="4"></td>
+																	<td><input type="radio" name="quality" class="radio" value="5"></td>
+																</tr>
+																<tr>
+																	<td class="cell-label">Price</td>
+																	<td><input type="radio" name="quality" class="radio" value="1"></td>
+																	<td><input type="radio" name="quality" class="radio" value="2"></td>
+																	<td><input type="radio" name="quality" class="radio" value="3"></td>
+																	<td><input type="radio" name="quality" class="radio" value="4"></td>
+																	<td><input type="radio" name="quality" class="radio" value="5"></td>
+																</tr>
+																<tr>
+																	<td class="cell-label">Value</td>
+																	<td><input type="radio" name="quality" class="radio" value="1"></td>
+																	<td><input type="radio" name="quality" class="radio" value="2"></td>
+																	<td><input type="radio" name="quality" class="radio" value="3"></td>
+																	<td><input type="radio" name="quality" class="radio" value="4"></td>
+																	<td><input type="radio" name="quality" class="radio" value="5"></td>
+																</tr>
+															</tbody>
+														</table><!-- /.table .table-bordered -->
+													</div><!-- /.table-responsive -->
+												</div><!-- /.review-table -->
+												
+												<div class="review-form">
+													<div class="form-container">
+														<form role="form" class="cnt-form">
 															
-								</li>
-							
-								<li class="lnk wishlist">
-									<a class="add-to-cart" href="/thongtin" title="Wishlist">
-										<i class="icon fa fa-heart"></i>
-									</a>
-								</li>
-
-								<li class="lnk">
-									<a class="add-to-cart" href="/thongtin" title="Compare">
-										<i class="fa fa-signal"></i>
-									</a>
-								</li>
-							</ul>
-						</div><!-- /.action -->
+															<div class="row">
+																<div class="col-sm-6">
+																	<div class="form-group">
+																		<label for="exampleInputName">Your Name <span class="astk">*</span></label>
+																		<input type="text" class="form-control txt" id="exampleInputName" placeholder="">
+																	</div><!-- /.form-group -->
+																	<div class="form-group">
+																		<label for="exampleInputSummary">Summary <span class="astk">*</span></label>
+																		<input type="text" class="form-control txt" id="exampleInputSummary" placeholder="">
+																	</div><!-- /.form-group -->
+																</div>
+	
+																<div class="col-md-6">
+																	<div class="form-group">
+																		<label for="exampleInputReview">Review <span class="astk">*</span></label>
+																		<textarea class="form-control txt txt-review" id="exampleInputReview" rows="4" placeholder=""></textarea>
+																	</div><!-- /.form-group -->
+																</div>
+															</div><!-- /.row -->
+															
+															<div class="action text-right">
+																<button class="btn btn-primary btn-upper">SUBMIT REVIEW</button>
+															</div><!-- /.action -->
+	
+														</form><!-- /.cnt-form -->
+													</div><!-- /.form-container -->
+												</div><!-- /.review-form -->
+	
+											</div><!-- /.product-add-review -->										
+											
+										</div><!-- /.product-tab -->
+									</div><!-- /.tab-pane -->
+	
+									<!-- <div id="tags" class="tab-pane">
+										<div class="product-tag">
+											
+											<h4 class="title">Product Tags</h4>
+											<form role="form" class="form-inline form-cnt">
+												<div class="form-container">
+										
+													<div class="form-group">
+														<label for="exampleInputTag">Add Your Tags: </label>
+														<input type="email" id="exampleInputTag" class="form-control txt">
+														
+	
+													</div>
+	
+													<button class="btn btn-upper btn-primary" type="submit">ADD TAGS</button>
+												</div> 
+											</form> 
+	
+											<form role="form" class="form-inline form-cnt">
+												<div class="form-group">
+													<label>&nbsp;</label>
+													<span class="text col-md-offset-3">Use spaces to separate tags. Use single quotes for phrases.</span>
+												</div>
+											</form> 
+	
+										</div> 
+									</div>  -->
+	
+								</div><!-- /.tab-content -->
+							</div><!-- /.col -->
+						</div><!-- /.row -->
+					</div><!-- /.product-tabs -->
+	
+					<!-- ============================================== HÀNG BÁN CHẠY ============================================== -->
+	<section class="section featured-product wow fadeInUp">
+		<h3 class="section-title">Hàng bán chạy</h3>
+		<div class="owl-carousel home-owl-carousel upsell-product custom-carousel owl-theme outer-top-xs">
+				
+			<div class="item item-carousel">
+				<div class="products">
+					
+				<div class="product">		
+					<div class="product-image">
+						<div class="image">
+							<a href="/thongtin">
+								<img src="{{ url_for('static',filename='images/hot-deals/Acer-Swift-3_SF314-42_Silver-FP-Backlit_modelpreview.png')}} " alt=""></a>
+						</div><!-- /.image -->			
+	
+									<div class="tag sale"><span>Sale</span></div>            		   
+					</div><!-- /.product-image -->
+					<div class="product-info text-left">
+						<h3 class="name"><a href="/thongtin">Swift 3x</a></h3>
+						<div class="rating rateit-small"></div>
+						<div class="description"></div>
+	
+						<div class="product-price">	
+							<span class="price">
+								26.600.000 đ				</span>
+														<span class="price-before-discount">27.699.000 đ</span>
+												
+						</div><!-- /.product-price -->
+						
+					</div><!-- /.product-info -->
+					<div class="cart clearfix animate-effect">
+							<div class="action">
+								<ul class="list-unstyled">
+									<li class="add-cart-button btn-group">
+										<button class="btn btn-primary icon" data-toggle="dropdown" type="button">
+											<i class="fa fa-shopping-cart"></i>													
+										</button>
+										<button class="btn btn-primary cart-btn" type="button">Thêm vào giỏ hàng</button>
+																
+									</li>
+								
+									<li class="lnk wishlist">
+										<a class="add-to-cart" href="/thongtin" title="Wishlist">
+											<i class="icon fa fa-heart"></i>
+										</a>
+									</li>
+	
+									<li class="lnk">
+										<a class="add-to-cart" href="/thongtin" title="Compare">
+											<i class="fa fa-signal"></i>
+										</a>
+									</li>
+								</ul>
+							</div><!-- /.action -->
+					</div><!-- /.cart -->
+				</div><!-- /.product -->
+				</div><!-- /.product -->
+			</div>
+			
+		
+			<div class="item item-carousel">
+				<div class="products">
+					
+		<div class="product">		
+			<div class="product-image">
+				<div class="image">
+					<a href="/thongtin">
+						<img src="{{ url_for('static',filename='images/hot-deals/Acer-Swift-3_SF314-42_Silver-FP-Backlit_modelpreview.png') }}" data-echo="{{ url_for('static',filename='images/hot-deals/Acer-Swift-3_SF314-42_Silver-FP-Backlit_modelpreview.png')}}" alt=""></a>
+				</div><!-- /.image -->			
+	
+										<div class="tag hot"><span>hot</span></div>		   
+			</div><!-- /.product-image -->
+				
+			
+			<div class="product-info text-left">
+				<h3 class="name"><a href="/thongtin">Swift 5</a></h3>
+				<div class="rating rateit-small"></div>
+				<div class="description"></div>
+	
+				<div class="product-price">	
+					<span class="price">
+						28.600.000 đ				</span>
+												 <span class="price-before-discount">28.690.000 đ</span>
+										
+				</div><!-- /.product-price -->
+				
+			</div><!-- /.product-info -->
+						<div class="cart clearfix animate-effect">
+					<div class="action">
+						<ul class="list-unstyled">
+							<li class="add-cart-button btn-group">
+								<button class="btn btn-primary icon" data-toggle="dropdown" type="button">
+									<i class="fa fa-shopping-cart"></i>													
+								</button>
+								<button class="btn btn-primary cart-btn" type="button">Thêm vào giỏ hàng</button>
+														
+							</li>
+						   
+							<li class="lnk wishlist">
+								<a class="add-to-cart" href="/thongtin" title="Wishlist">
+									 <i class="icon fa fa-heart"></i>
+								</a>
+							</li>
+	
+							<li class="lnk">
+								<a class="add-to-cart" href="/thongtin" title="Compare">
+									<i class="fa fa-signal"></i>
+								</a>
+							</li>
+						</ul>
+					</div><!-- /.action -->
 				</div><!-- /.cart -->
-			</div><!-- /.product -->
-			</div><!-- /.product -->
+				</div><!-- /.product -->
+		  
+				</div><!-- /.products -->
+			</div><!-- /.item -->
+		
+			<div class="item item-carousel">
+				<div class="products">
+					
+				<div class="product">		
+					<div class="product-image">
+						<div class="image">
+							<a href="/thongtin">
+								<img src="{{ url_for('static',filename='images/hot-deals/Acer-Swift-3_SF314-42_Silver-FP-Backlit_modelpreview.png')}} " alt=""></a>
+						</div><!-- /.image -->			
+	
+									<div class="tag sale"><span>Sale</span></div>            		   
+					</div><!-- /.product-image -->
+					<div class="product-info text-left">
+						<h3 class="name"><a href="/thongtin">Swift 3x</a></h3>
+						<div class="rating rateit-small"></div>
+						<div class="description"></div>
+	
+						<div class="product-price">	
+							<span class="price">
+								26.600.000 đ				</span>
+														<span class="price-before-discount">27.699.000 đ</span>
+												
+						</div><!-- /.product-price -->
+						
+					</div><!-- /.product-info -->
+					<div class="cart clearfix animate-effect">
+							<div class="action">
+								<ul class="list-unstyled">
+									<li class="add-cart-button btn-group">
+										<button class="btn btn-primary icon" data-toggle="dropdown" type="button">
+											<i class="fa fa-shopping-cart"></i>													
+										</button>
+										<button class="btn btn-primary cart-btn" type="button">Thêm vào giỏ hàng</button>
+																
+									</li>
+								
+									<li class="lnk wishlist">
+										<a class="add-to-cart" href="/thongtin" title="Wishlist">
+											<i class="icon fa fa-heart"></i>
+										</a>
+									</li>
+	
+									<li class="lnk">
+										<a class="add-to-cart" href="/thongtin" title="Compare">
+											<i class="fa fa-signal"></i>
+										</a>
+									</li>
+								</ul>
+							</div><!-- /.action -->
+					</div><!-- /.cart -->
+				</div><!-- /.product -->
+				</div><!-- /.product -->
+			</div>
+		
+			<div class="item item-carousel">
+				<div class="products">
+					
+		<div class="product">		
+			<div class="product-image">
+				<div class="image">
+					<a href="/thongtin"><img src="{{ url_for('static',filename='images/hot-deals/Porsche-Design-Acer-Book-RS_AP714-51_modelpreview.png') }}" alt=""></a>
+					
+				</div><!-- /.image -->			
+	
+										<div class="tag hot"><span>hot</span></div>		   
+			</div><!-- /.product-image -->
+				
+			
+			<div class="product-info text-left">
+				<h3 class="name"><a href="/thongtin">Acer Book</a></h3>
+				<div class="rating rateit-small"></div>
+				<div class="description"></div>
+	
+				<div class="product-price">	
+					<span class="price">
+						31.600.000 đ				</span>
+												 <span class="price-before-discount">32.990.000 đ</span>
+										
+				</div><!-- /.product-price -->
+				
+			</div><!-- /.product-info -->
+						<div class="cart clearfix animate-effect">
+					<div class="action">
+						<ul class="list-unstyled">
+							<li class="add-cart-button btn-group">
+								<button class="btn btn-primary icon" data-toggle="dropdown" type="button">
+									<i class="fa fa-shopping-cart"></i>													
+								</button>
+								<button class="btn btn-primary cart-btn" type="button">Thêm vào giỏ hàng</button>
+														
+							</li>
+						   
+							<li class="lnk wishlist">
+								<a class="add-to-cart" href="/thongtin" title="Wishlist">
+									 <i class="icon fa fa-heart"></i>
+								</a>
+							</li>
+	
+							<li class="lnk">
+								<a class="add-to-cart" href="/thongtin" title="Compare">
+									<i class="fa fa-signal"></i>
+								</a>
+							</li>
+						</ul>
+					</div><!-- /.action -->
+				</div><!-- /.cart -->
+				</div><!-- /.product -->
+		  
+				</div><!-- /.products -->
+			</div><!-- /.item -->
+		
+			<div class="item item-carousel">
+				<div class="products">
+					
+		<div class="product">		
+			<div class="product-image">
+				<div class="image">
+					<a href="/thongtin"><img src="{{ url_for('static',filename='images/hot-deals/Acer-Nitro-7_AN715-52_RGB-KB_modelpreview.png') }}" alt=""></a>
+				</div><!-- /.image -->			
+	
+				<div class="tag new"><span>Mới</span></div>                        		   
+			</div><!-- /.product-image -->
+				
+			
+			<div class="product-info text-left">
+				<h3 class="name"><a href="/thongtin">NITRO 7</a></h3>
+				<div class="rating rateit-small"></div>
+				<div class="description"></div>
+	
+				<div class="product-price">	
+					<span class="price">
+						34.990.000 đ				</span>
+												 <span class="price-before-discount">35.690.000	 đ</span>
+										
+				</div><!-- /.product-price -->
+				
+			</div><!-- /.product-info -->
+						<div class="cart clearfix animate-effect">
+					<div class="action">
+						<ul class="list-unstyled">
+							<li class="add-cart-button btn-group">
+								<button class="btn btn-primary icon" data-toggle="dropdown" type="button">
+									<i class="fa fa-shopping-cart"></i>													
+								</button>
+								<button class="btn btn-primary cart-btn" type="button">Thêm vào giỏ hàng</button>
+														
+							</li>
+						   
+							
+						</ul>
+					</div><!-- /.action -->
+				</div><!-- /.cart -->
+				</div><!-- /.product -->
+		  
+				</div><!-- /.products -->
+			</div><!-- /.item -->
+		</div><!-- /.home-owl-carousel -->
+	</section><!-- /.section -->
+	<!-- ============================================== UPSELL PRODUCTS : END ============================================== -->
+				
+				</div><!-- /.col -->
+				<div class="clearfix"></div>
+			</div><!-- /.row -->
 		</div>
-	
-		<div class="item item-carousel">
-			<div class="products">
-				
-	<div class="product">		
-		<div class="product-image">
-			<div class="image">
-				<a href="/thongtin"><img src="{{ url_for('static',filename='images/hot-deals/Porsche-Design-Acer-Book-RS_AP714-51_modelpreview.png') }}" alt=""></a>
-				
-			</div><!-- /.image -->			
-
-			                        <div class="tag hot"><span>hot</span></div>		   
-		</div><!-- /.product-image -->
-			
-		
-		<div class="product-info text-left">
-			<h3 class="name"><a href="/thongtin">Porsche Design Acer Book</a></h3>
-			<div class="rating rateit-small"></div>
-			<div class="description"></div>
-
-			<div class="product-price">	
-				<span class="price">
-					31.600.000 đ				</span>
-										     <span class="price-before-discount">32.990.000 đ</span>
-									
-			</div><!-- /.product-price -->
-			
-		</div><!-- /.product-info -->
-					<div class="cart clearfix animate-effect">
-				<div class="action">
-					<ul class="list-unstyled">
-						<li class="add-cart-button btn-group">
-							<button class="btn btn-primary icon" data-toggle="dropdown" type="button">
-								<i class="fa fa-shopping-cart"></i>													
-							</button>
-							<button class="btn btn-primary cart-btn" type="button">Thêm vào giỏ hàng</button>
-													
-						</li>
-	                   
-		                <li class="lnk wishlist">
-							<a class="add-to-cart" href="/thongtin" title="Wishlist">
-								 <i class="icon fa fa-heart"></i>
-							</a>
-						</li>
-
-						<li class="lnk">
-							<a class="add-to-cart" href="/thongtin" title="Compare">
-							    <i class="fa fa-signal"></i>
-							</a>
-						</li>
-					</ul>
-				</div><!-- /.action -->
-			</div><!-- /.cart -->
-			</div><!-- /.product -->
-      
-			</div><!-- /.products -->
-		</div><!-- /.item -->
-	
-		<div class="item item-carousel">
-			<div class="products">
-				
-	<div class="product">		
-		<div class="product-image">
-			<div class="image">
-				<a href="/thongtin"><img src="{{ url_for('static',filename='images/hot-deals/Acer-Nitro-7_AN715-52_RGB-KB_modelpreview.png') }}" alt=""></a>
-			</div><!-- /.image -->			
-
-			<div class="tag new"><span>Mới</span></div>                        		   
-		</div><!-- /.product-image -->
-			
-		
-		<div class="product-info text-left">
-			<h3 class="name"><a href="/thongtin">NITRO 7</a></h3>
-			<div class="rating rateit-small"></div>
-			<div class="description"></div>
-
-			<div class="product-price">	
-				<span class="price">
-					34.990.000 đ				</span>
-										     <span class="price-before-discount">35.690.000	 đ</span>
-									
-			</div><!-- /.product-price -->
-			
-		</div><!-- /.product-info -->
-					<div class="cart clearfix animate-effect">
-				<div class="action">
-					<ul class="list-unstyled">
-						<li class="add-cart-button btn-group">
-							<button class="btn btn-primary icon" data-toggle="dropdown" type="button">
-								<i class="fa fa-shopping-cart"></i>													
-							</button>
-							<button class="btn btn-primary cart-btn" type="button">Thêm vào giỏ hàng</button>
-													
-						</li>
-	                   
-		                
-					</ul>
-				</div><!-- /.action -->
-			</div><!-- /.cart -->
-			</div><!-- /.product -->
-      
-			</div><!-- /.products -->
-		</div><!-- /.item -->
-	</div><!-- /.home-owl-carousel -->
-</section><!-- /.section -->
-<!-- ============================================== UPSELL PRODUCTS : END ============================================== -->
-			
-			</div><!-- /.col -->
-			<div class="clearfix"></div>
-		</div><!-- /.row -->
 	</div>
+</section>
 
 <!-- ============================================================= FOOTER ============================================================= -->
 <footer class="motopress-wrapper footer">
@@ -1073,45 +1078,41 @@
 			<div class="col-12">
 				<div class="row footer-widgets">
 					<div class="col-4">
-						<div >
+						<div>
 							<div id="social_networks-2">
-								<h4>Follow Us</h4>							 
+								<h4>Follow Us</h4>
 								<ul class="social">
 									<li class="social_li">
 										<a class="share-icon share-facebook" target="_blank" href="http://www.facebook.com/sharer.php?u=http://jssor.com" title="Share on Facebook"></a>
 									</li>
 									<li class="social_li">
 										<a class="share-icon share-twitter" target="_blank" href="http://twitter.com/share?url=http://jssor.com&text=JavaScript%20jQuery%20Image%20Slider/Slideshow/Carousel/Gallery/Banner%20html%20TOUCH%20SWIPE%20Responsive" title="Share on Twitter"></a>
-				
+
 									</li>
 									<li class="social_li">
 										<a class="share-icon share-linkedin" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=http://jssor.com" title="Share on LinkedIn"></a>
-				
+
 									</li>
 									<li class="social_li">
 										<a class="share-icon share-stumbleupon" target="_blank" href="http://www.stumbleupon.com/submit?url=http://jssor.com&title=JavaScript%20jQuery%20Image%20Slider/Slideshow/Carousel/Gallery/Banner%20html%20TOUCH%20SWIPE%20Responsive" title="Share on StumbleUpon"></a>
-				
+
 									</li>
 									<li class="social_li">
 										<a class="share-icon share-email" target="_blank" href="mailto:?Subject=Jssor%20Slider&Body=Highly%20recommended%20JavaScript%20jQuery%20Image%20Slider/Slideshow/Carousel/Gallery/Banner%20html%20TOUCH%20SWIPE%20Responsive%20http://jssor.com" title="Share by Email"></a>
-			
+
 									</li>
-								</ul>							 
-							</div> 
+								</ul>
+							</div>
 						</div>
-					
 						<div class="row">
 							<div id="footer-text" class="footer-text">
-								 &copy; 2021<br/>
-								Privacy Policy			 
-							</div> 
-							
+								&copy; 2021<br/> Privacy Policy
+							</div>
 						</div>
 					</div>
-					
-					<!-- <div class="col-4">
+					<div class="col-4">
 						<div id="text-6">
-							<h4>Địa Chỉ</h4> 
+							<h4>Địa Chỉ</h4>
 							<div class="textwidget">
 								<address class="address-2">
 									<span>Đại Học Bà Rịa Vũng Tàu</span>
@@ -1124,14 +1125,19 @@
 									</span>
 								</address>
 							</div>
-						</div> 
-					</div>  -->
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </footer>
  
+</div>
+<div id="back-top-wrapper" class="visible-desktop">
+	<p id="back-top">
+		<a href="#top"><span></span></a>
+	</p>
 </div>
 
 
